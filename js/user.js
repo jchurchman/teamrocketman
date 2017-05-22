@@ -16,7 +16,8 @@ var user = {
     color3: '',
 
     //methods
-    
+
+    //document.querySelector('input[name = "marsupial"]').value;
 
     //input for each property()
     //localStorage set()
