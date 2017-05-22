@@ -68,7 +68,7 @@ CSS will transform from page 2 to final form.
 
 
 ### Stretch Goals
-Narrative Tracker - Keeps tabs on User's place, can't redo journey. (*window.location*)
-Animated narrator
-WireFrame templates - 
-Runaway Button
+- Narrative Tracker - Keeps tabs on User's place, can't redo journey. (*window.location*)
+- Animated narrator
+- WireFrame templates
+- Runaway Button
