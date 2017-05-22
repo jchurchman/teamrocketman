@@ -36,7 +36,7 @@ Photos and short bios of each member of the team.
 *About the project blurb*
 
 
-#### Page 1 - Welcome Page
+#### Welcome
 Introduce Narrator -- Guide box
 
 Input fields from simple form structure:
@@ -46,7 +46,7 @@ Input fields from simple form structure:
 - ~~Select layout for wireframe (radio button)~~
 - find a place to get some list items & put those in the HTML
 
-#### Page 2 - 
+#### Layout - 
 Div Size/Location Changes
 
 HTML Frame is displayed with borders for clarity.
@@ -55,7 +55,7 @@ Use input field with number inputs to adjust size/location of block elements.
 
 Step by step UL to Nav Buttons. Using input/innerHTML
 
-#### Page 3 - 
+#### Color - 
 Color page
 
 Show gathered data and some hardcoded content in bare HTML layout
@@ -63,10 +63,9 @@ Show gathered data and some hardcoded content in bare HTML layout
 Narrator box pops in "This looks OK, how about adding some color?"
 
 User is shown two drop down selector boxes.
-
-    - Background
-    - Header
-    - Text color
+- Background
+- Header
+- Text color
 
 One will contain HTML tags, one will have color options.
 
@@ -74,14 +73,14 @@ Changes will be made using an "Apply Changes" button.
 
 User can move on by hitting a different button.
 
-#### Page 4 - 
+#### Roughdraft - 
 Colored HTML Frame w/ roughly developed layout.
 
 Narrator "Took your idea and did some work on it." 
 
 Hiding Elements - remove elements via drop down to find button.
 
-#### Page 5 - 
+#### Final - 
 Final Page
 
 CSS will transform from page 2 to final form.
