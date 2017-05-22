@@ -9,7 +9,8 @@ function Narrator() {
             this.self.setAttribute('class', 'showMe');
         }
     this.submit = function () {
-
+        user.saveInfo();
+        window.location('#')
     },
         this.getInfo = function () {
             User = JSON.parse(localStorage.getItem('user'));
