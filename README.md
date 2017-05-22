@@ -31,11 +31,11 @@ Photos and short bios of each member of the team.
 #### Page 1 - Welcome Page
 Introduce Narrator -- Guide box
 Input fields from simple form structure:
-    - Name (text input)
-    - Favorite Marsupial (dropdown)
-    - How did you hear about us? (check boxes)
-    - ~~Select layout for wireframe (radio button)~~
-    - find a place to get some list items & put those in the HTML
+- Name (text input)
+- Favorite Marsupial (dropdown)
+- How did you hear about us? (check boxes)
+- ~~Select layout for wireframe (radio button)~~
+- find a place to get some list items & put those in the HTML
 
 #### Page 2 - 
 Div Size/Location Changes
