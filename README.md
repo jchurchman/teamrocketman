@@ -34,9 +34,17 @@ Input fields from simple form structure:
     - Name (text input)
     - Favorite Marsupial (dropdown)
     - How did you hear about us? (check boxes)
-    - Select layout for wireframe (radio button)
+    - ~~Select layout for wireframe (radio button)~~
+    - find a place to get some list items & put those in the HTML
 
-#### Page 2 - Color page
+#### Page 2 - 
+Div Size/Location Changes
+HTML Frame is displayed with borders for clarity.
+Use input field with number inputs to adjust size/location of block elements.
+Step by step UL to Nav Buttons. Using input/innerHTML
+
+#### Page 3 - 
+Color page
 Show gathered data and some hardcoded content in bare HTML layout
 Narrator box pops in "This looks OK, how about adding some color?"
 User is shown two drop down selector boxes.
@@ -47,5 +55,20 @@ One will contain HTML tags, one will have color options.
 Changes will be made using an "Apply Changes" button.
 User can move on by hitting a different button.
 
-#### Page 3 - Div Size Changes
-Colored HTML Frame is displayed with borders for clarity.
+#### Page 4 - 
+Colored HTML Frame w/ roughly developed layout.
+Narrator "Took your idea and did some work on it." 
+Hiding Elements - remove elements via drop down to find button.
+
+#### Page 5 - 
+Final Page
+CSS will transform from page 2 to final form.
+
+
+
+
+### Stretch Goals
+Narrative Tracker - Keeps tabs on User's place, can't redo journey. (*window.location*)
+Animated narrator
+WireFrame templates - 
+Runaway Button
