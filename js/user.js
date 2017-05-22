@@ -24,12 +24,9 @@ var user = {
         this.mood = document.getElementById('moodInput').value;
         this.particle = document.getElementById('particleInput').value;
         this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-
     }
 
 
     //input for each property()
     //localStorage set()
 };
-
-document.getElementById('submitButton').addEventListener('click', user.userSubmission);
