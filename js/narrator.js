@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+'use strict';
+=======
 'use strict';
 
 function Narrator() {
@@ -31,3 +34,4 @@ function showTabHandler() {
     event.preventDefault();
     Narrator.showTab();
 }
+>>>>>>> d312e7a05709ee20cd1c298d308b8873071f482f

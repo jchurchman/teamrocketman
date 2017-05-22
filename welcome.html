@@ -8,23 +8,27 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/welcome.css">
+
     <title>Welcome</title>
 </head>
 
 <body>
     <fieldset>
-        <form>
-            Your Name:<br>
-            <input type="text" name="name"><br> Favorite Color:<br>
-            <input type="text" name="color"><br> Current Mood:<br>
-            <input type="text" name="mood"><br> Favorite Subatomic Particle:<br>
-            <input type="text" name="particle"><br> Favorite Marsupial:<br>
-            <input type="radio" name="marsupial" value="kangaroo">Kangaroo<br>
-            <input type="radio" name="marsupial" value="koala">Koala<br>
-            <input type="radio" name="marsupial" value="sugarglider">Sugar Glider<br>
-            <input type="radio" name="marsupial" value="tasmaniandevils">Tasmanian Devil<br><br>
-            <input type="submit" value="Submit">
-        </form>
+    <form>
+        Your Name:<br>
+        <input id="nameInput" type="text" name="name"><br>
+        Favorite Color:<br>
+        <input id="colorInput" type="text" name="color"><br>
+        Current Mood:<br>
+        <input id="moodInput" type="text" name="mood"><br>
+        Favorite Subatomic Particle:<br>
+        <input id="particleInput" type="text" name="particle"><br>
+        Favorite Marsupial:<br>
+        <input type="radio" name="marsupial" value="kangaroo">Kangaroo<br>
+        <input type="radio" name="marsupial" value="koala">Koala<br>
+        <input type="radio" name="marsupial" value="sugarglider">Sugar Glider<br>
+        <input type="radio" name="marsupial" value="tasmaniandevils">Tasmanian Devil<br><br>
+    </form>
     </fieldset>
     <div class = "showMe" id="narrator">
         <div id="closeout">
@@ -35,7 +39,11 @@
     <footer>
 
     </footer>
-    <script src="js/narrator.js"></script>
+
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/narrator.js"></script>
+    <script type="text/javascript" src="js/welcome.js"></script>
+
 </body>
 
 </html>
