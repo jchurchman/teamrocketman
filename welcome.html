@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylsheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/welcome.css">
     <title>Welcome</title>
 </head>
+
 <body>
     <fieldset>
-    <form>
-        Your Name:<br>
-        <input type="text" name="name"><br>
-        Favorite Color:<br>
-        <input type="text" name="color"><br>
-        Current Mood:<br>
-        <input type="text" name="mood"><br>
-        Favorite Subatomic Particle:<br>
-        <input type="text" name="particle"><br>
-        Favorite Marsupial:<br>
-        <input type="radio" name="marsupial" value="kangaroo">Kangaroo<br>
-        <input type="radio" name="marsupial" value="koala">Koala<br>
-        <input type="radio" name="marsupial" value="sugarglider">Sugar Glider<br>
-        <input type="radio" name="marsupial" value="tasmaniandevils">Tasmanian Devil<br><br>
-        <input type="submit" value="Submit">
-    </form>
+        <form>
+            Your Name:<br>
+            <input type="text" name="name"><br> Favorite Color:<br>
+            <input type="text" name="color"><br> Current Mood:<br>
+            <input type="text" name="mood"><br> Favorite Subatomic Particle:<br>
+            <input type="text" name="particle"><br> Favorite Marsupial:<br>
+            <input type="radio" name="marsupial" value="kangaroo">Kangaroo<br>
+            <input type="radio" name="marsupial" value="koala">Koala<br>
+            <input type="radio" name="marsupial" value="sugarglider">Sugar Glider<br>
+            <input type="radio" name="marsupial" value="tasmaniandevils">Tasmanian Devil<br><br>
+            <input type="submit" value="Submit">
+        </form>
     </fieldset>
+    <div class = "showMe" id="narrator">
+        <div id="closeout">
+            <!-- this is the closeout button for all narrator boxes -->
+        </div>
+        <p></p>
+    </div>
     <footer>
 
     </footer>
+    <script src="js/narrator.js"></script>
 </body>
+
 </html>
