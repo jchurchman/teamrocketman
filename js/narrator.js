@@ -3,7 +3,8 @@
 function Narrator() {
 
     this.guest = {};
-
+    this.talkLoc = document.getElementById('talkLoc');
+    this.listenLoc = document.getElementById('inputSpot');
     // this.self = document.getElementsByTagName('div')[0];
     // this.hideMe = function () {
     //     this.self.setAttribute('class', 'hideMe');
@@ -90,6 +91,14 @@ function Narrator() {
         this.popFloat();
         this.popMargin();
         this.popFont();
+    };
+
+    this.talkAtUser = function (speech) {
+    this.talkLoc.innerText = speech;
+};
+
+    this.hearUser = function () {
+
     };
 }
 
