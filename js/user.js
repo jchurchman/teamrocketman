@@ -26,6 +26,8 @@ var user = {
     },
 
     locallyStoreUser: function() {
+        // userArray = [];
+        // userArray.push(user);
         var userArrayStringified = JSON.stringify(userArray);
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
