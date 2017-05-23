@@ -39,8 +39,10 @@ welcomeUser.userSubmission = function() {
     this.color = document.getElementById('colorInput').value;
     this.mood = document.getElementById('moodInput').value;
     this.particle = document.getElementById('particleInput').value;
-    this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
+    this.marsupial = document.querySelector('#dropDown option:checked').value;
+    console.log(this.marsupial);
 };
+    // this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
 
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', submitHandler);
