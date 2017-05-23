@@ -1,3 +1,4 @@
+
 'use strict';
 
 function Narrator() {
@@ -24,6 +25,7 @@ function Narrator() {
 //     event.preventDefault();
 //     Narrator.hideMe();
 // }
+
 
 // var showTab = document.getElementsByClassName('hideMe');
 // showTab.addEventListener('hover', showTabHandler);
