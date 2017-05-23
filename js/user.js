@@ -1,28 +1,41 @@
 'use strict';
 
+function user() {
 
-var user = {
-    name: '',
-    color: '',
-    mood: '',
-    particle: '',
-    marsupial: '',
-    fontSize: 0,
-    pFont: 0,
-    margin: 0,
-    float: '',
+    this.name = '';
+    this.color = '';
+    this.mood = '';
+    this.particle = '';
+    this.marsupial = '';
+    this.fontSize = 0;
+    this.pFont = 0;
+    this.margin = 0;
+    this.float = '';
 
-    color1: '',
-    color2: '',
-    color3: '',
+    this.color1 = '';
+    this.color2 = '';
+    this.color3 = '';
 
-    locallyStoreUser: function() {
-        var userArrayStringified = JSON.stringify(this);
+    // this.userSubmission = function() {
+    //     this.name = document.getElementById('nameInput').value;
+    //     this.color = document.getElementById('colorInput').value;
+    //     this.mood = document.getElementById('moodInput').value;
+    //     this.particle = document.getElementById('particleInput').value;
+    //     this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
+    // }
+
+    this.locallyStoreUser = function() {
+        // userArray = [];
+        // userArray.push(user);
+        var userArrayStringified = JSON.stringify(userArray);
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
-    },
+    };
+}
 
-    getStoredData: function () {
-        JSON.parse(localStorage.getItem('userArray'));
-    }
-};
+function marsupial() {
+    this.name = name;
+    this.id = id;
+    this.filepath = filepath;
+    this.blurb = blurb;
+}
