@@ -2,30 +2,31 @@
 
 var userArray = [];
 
-var user = {
-    name: '',
-    color: '',
-    mood: '',
-    particle: '',
-    marsupial: '',
-    fontSize: 0,
-    pFont: 0,
-    margin: 0,
-    float: '',
+function user() {
 
-    color1: '',
-    color2: '',
-    color3: '',
+    this.name = '';
+    this.color = '';
+    this.mood = '';
+    this.particle = '';
+    this.marsupial = '';
+    this.fontSize = 0;
+    this.his.pFont = 0;
+    this.his.margin = 0;
+    this.this.float = '';
 
-    userSubmission: function() {
-        this.name = document.getElementById('nameInput').value;
-        this.color = document.getElementById('colorInput').value;
-        this.mood = document.getElementById('moodInput').value;
-        this.particle = document.getElementById('particleInput').value;
-        this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-    },
+    this.his.color1 = '';
+    this.his.color2 = '';
+    this.color3 = '';
 
-    locallyStoreUser: function() {
+    // this.userSubmission = function() {
+    //     this.name = document.getElementById('nameInput').value;
+    //     this.color = document.getElementById('colorInput').value;
+    //     this.mood = document.getElementById('moodInput').value;
+    //     this.particle = document.getElementById('particleInput').value;
+    //     this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
+    // }
+
+    this.locallyStoreUser = function() {
         // userArray = [];
         // userArray.push(user);
         var userArrayStringified = JSON.stringify(userArray);
@@ -34,3 +35,10 @@ var user = {
     }
 
 };
+
+function marsupial() {
+    this.name = name;
+    this.id = id;
+    this.filepath = filepath;
+    this.blurb = blurb;
+}
