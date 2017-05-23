@@ -1,18 +1,33 @@
 /*                  Narrator Section */
 
 
-#narrator {
+div {
     background-color: red;
     position:fixed;
-    top:600px;
+    top: 450px;
     right: 0px;
     width: 500px;
-    height: 300px;
+    height: 500px;
+    /*transition-delay: 1s;*/
+}
+
+#closeout {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .showMe {
+    right: 15px;
+    /*background-color: blue;*/
 }
 
 .hideMe {
-
+    right: -480px;
+    /*background-color: blueviolet;*/
 }
+
