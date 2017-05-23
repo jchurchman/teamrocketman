@@ -1,12 +1,15 @@
 /*                  Narrator Section */
 
 fieldset {
-    /*width: 400px;*/
+    width: 600px;
     margin: 0 auto;
 }
 
 legend {
     margin: 0 auto;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 label {
@@ -15,11 +18,17 @@ label {
     clear: left;
     width: 300px;
     text-align: right;
+    margin-right: 30px;
 }
 
 .inputBox {
     display: inline-block;
     float: left;
+}
+
+footer {
+    border: 5px solid black;
+    text-align: center;
 }
 
 
