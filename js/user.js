@@ -36,9 +36,11 @@ function User() {
 //     };
 // }
 
-function marsupial() {
+function Marsupial( name, id, filepath, blurb ) {
     this.name = name;
     this.id = id;
     this.filepath = filepath;
     this.blurb = blurb;
 }
+
+var critter = new Marsupial ( 'Tigger', 'tigger', './img/tigger.jpg', 'Tiggers are wonderful things, the wonderful thing about tiggers is I\'m the only one')
