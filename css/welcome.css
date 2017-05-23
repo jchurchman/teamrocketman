@@ -1,18 +1,53 @@
 /*                  Narrator Section */
 
+fieldset {
+    width: 600px;
+    margin: 0 auto;
+}
 
-div {
-    background-color: red;
+legend {
+    margin: 0 auto;
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 300px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.inputBox {
+    display: inline-block;
+    float: left;
+}
+
+footer {
+    border: 5px solid black;
+    text-align: center;
+}
+
+
+
+/*                  Narrator Section */
+
+
+/*div {*/
+    /*background-color: red;
     position:fixed;
     top: 450px;
     right: 0px;
     width: 500px;
     height: 500px;
     /*transition-delay: 1s;*/
-}
+/*}*/
                   /*STRETCH GOAL Narrator Section */
 
-#closeout {
+/*#closeout {
     height: 15px;
     width: 15px;
     border-radius: 15px;
@@ -20,7 +55,7 @@ div {
     position: absolute;
     top: 5px;
     left: 5px;
-}
+}*/
 
 /*
 .showMe {
