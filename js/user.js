@@ -18,24 +18,6 @@ function User() {
 
 }
 
-    // this.userSubmission = function() {
-    //     this.name = document.getElementById('nameInput').value;
-    //     this.color = document.getElementById('colorInput').value;
-    //     this.mood = document.getElementById('moodInput').value;
-    //     this.particle = document.getElementById('particleInput').value;
-    //     this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-    // }
-
-//Moving this to Narrator
-//     this.locallyStoreUser = function() {
-//         // userArray = [];
-//         // userArray.push(user);
-//         var welcomeUserStringified = JSON.stringify(Narrator.guest);
-//         localStorage.setItem('userInfo', welcomeUserStringified);
-//         console.log(localStorage);
-//     };
-// }
-
 function Marsupial( name, id, filepath, blurb ) {
     this.name = name;
     this.id = id;
@@ -43,4 +25,3 @@ function Marsupial( name, id, filepath, blurb ) {
     this.blurb = blurb;
 }
 
-var critter = new Marsupial ( 'Tigger', 'tigger', './img/tigger.jpg', 'Tiggers are wonderful things, the wonderful thing about tiggers is I\'m the only one')
