@@ -1,25 +1,22 @@
 'use strict';
 
 function User() {
-
-    this.name = name;
-    this.color = color;
-    this.mood = mood;
-    this.particle = particle;
-    this.marsupial = marsupial;
-    this.fontSize = fontSize;
-    this.pFont = pFont;
-    this.margin = margin;
-    this.float = float;
-
-    this.color1 = color1;
-    this.color2 = color2;
-    this.color3 = color3;
-
+    this.userName = '';
+    this.color = '';
+    this.mood = '';
+    this.particle = '';
+    this.marsupial = '';
+    this.fontSize = '';
+    this.pFont = 0;
+    this.margin = '';
+    this.float = '';
+    this.color1 = '';
+    this.color2 = '';
+    this.color3 = '';
 }
 
-function Marsupial( name, id, filepath, blurb ) {
-    this.name = name;
+function Marsupial( critterName, id, filepath, blurb ) {
+    this.critterName = critterName;
     this.id = id;
     this.filepath = filepath;
     this.blurb = blurb;
