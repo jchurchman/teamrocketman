@@ -29,6 +29,8 @@ label {
 footer {
     border: 5px solid black;
     text-align: left;
+    padding-left: 50px;
+    padding-top: 25px;
     left: 0;
     bottom: 0;
     width: 100%;
