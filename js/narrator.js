@@ -48,7 +48,7 @@ function Narrator() {
     };
 
     this.popCritterPic = function () {
-        var critterPic = document.getElementsByTagName('img');
+        var critterPic = document.getElementsByTagName('img')[0];
         var critterSrc = this.guest.marsupial.filepath;
         critterPic.src = critterSrc;
     };
