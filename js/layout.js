@@ -3,13 +3,12 @@
 var layoutNarrator = new Narrator();
 var layoutUser = new User ();
 
+layoutNarrator.saveGuest = function() {
+    this.guest = layoutUser;
+};
+
 layoutNarrator.getGuest();
 layoutNarrator.popTopContent();
-
-
-
-
-
 
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', submitHandler);
