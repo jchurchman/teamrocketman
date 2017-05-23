@@ -1,7 +1,5 @@
 'use strict';
 
-var userArray = [];
-
 function user() {
 
     this.name = '';
@@ -30,10 +28,14 @@ function user() {
         // userArray = [];
         // userArray.push(user);
         var userArrayStringified = JSON.stringify(userArray);
+
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
-    }
+    },
 
+    getStoredData: function () {
+        JSON.parse(localStorage.getItem('userArray'));
+    }
 };
 
 function marsupial() {
