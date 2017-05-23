@@ -1,6 +1,6 @@
 'use strict';
 
-function user() {
+function User() {
 
     this.name = '';
     this.color = '';
@@ -16,6 +16,8 @@ function user() {
     this.color2 = '';
     this.color3 = '';
 
+}
+
     // this.userSubmission = function() {
     //     this.name = document.getElementById('nameInput').value;
     //     this.color = document.getElementById('colorInput').value;
@@ -24,14 +26,15 @@ function user() {
     //     this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
     // }
 
-    this.locallyStoreUser = function() {
-        // userArray = [];
-        // userArray.push(user);
-        var userArrayStringified = JSON.stringify(userArray);
-        localStorage.setItem('userArray', userArrayStringified);
-        console.log(localStorage);
-    };
-}
+//Moving this to Narrator
+//     this.locallyStoreUser = function() {
+//         // userArray = [];
+//         // userArray.push(user);
+//         var welcomeUserStringified = JSON.stringify(Narrator.guest);
+//         localStorage.setItem('userInfo', welcomeUserStringified);
+//         console.log(localStorage);
+//     };
+// }
 
 function marsupial() {
     this.name = name;

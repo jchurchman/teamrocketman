@@ -29,6 +29,10 @@ var welcomeUser = new User();
 //     }
 // }
 
+welcomeNarrator.saveGuest = function() {
+    this.guest = welcomeUser;
+};
+
 //need to instantiate instance of user for this page
 welcomeUser.userSubmission = function() {
     this.name = document.getElementById('nameInput').value;
@@ -38,13 +42,12 @@ welcomeUser.userSubmission = function() {
     this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
 };
 
-
-
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
     welcomeUser.userSubmission();
-    welcomeUser.locallyStoreUser();
-    window.location('./layout.html');
+    welcomeNarrator.saveGuest();
+    welcomeNarrator.locallyStoreUser();
+    // window.location('./layout.html');
 }
