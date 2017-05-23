@@ -3,6 +3,28 @@
 var welcomeNarrator = new Narrator ();
 var welcomeUser = new User();
 
+welcomeNarrator.saveGuest = function() {
+    this.guest = welcomeUser;
+};
+
+welcomeUser.userSubmission = function() {
+    this.name = document.getElementById('nameInput').value;
+    this.color = document.getElementById('colorInput').value;
+    this.mood = document.getElementById('moodInput').value;
+    this.particle = document.getElementById('particleInput').value;
+    this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
+};
+
+var submitButton = document.getElementById('submit');
+submitButton.addEventListener('click', submitHandler);
+
+function submitHandler() {
+    welcomeUser.userSubmission();
+    welcomeNarrator.saveGuest();
+    welcomeNarrator.locallyStoreUser();
+    window.location.href= './layout.html';
+}
+
 //NARRATOR FUNCTIONS TBD
 // var button = document.getElementById('closeout');
 // button.addEventListener('click', hideMeHandler);
@@ -28,26 +50,3 @@ var welcomeUser = new User();
 //         welcomeNarrator.showMe();
 //     }
 // }
-
-welcomeNarrator.saveGuest = function() {
-    this.guest = welcomeUser;
-};
-
-//need to instantiate instance of user for this page
-welcomeUser.userSubmission = function() {
-    this.name = document.getElementById('nameInput').value;
-    this.color = document.getElementById('colorInput').value;
-    this.mood = document.getElementById('moodInput').value;
-    this.particle = document.getElementById('particleInput').value;
-    this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-};
-
-var submitButton = document.getElementById('submit');
-submitButton.addEventListener('click', submitHandler);
-
-function submitHandler() {
-    welcomeUser.userSubmission();
-    welcomeNarrator.saveGuest();
-    welcomeNarrator.locallyStoreUser();
-    window.location.href= './layout.html';
-}
