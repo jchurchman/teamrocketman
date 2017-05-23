@@ -74,6 +74,12 @@ function Narrator() {
         var critterPic = document.getElementsByTagName('img') [0];
         critterPic.setAttribute('class', floatProp);
     };
+
+    this.popMargin = function () {
+        var marginProp = this.guest.margin;
+        var marginEle = document.getElementsByTagName('p') [0];
+        marginEle.setAttribute('class', marginProp); 
+    };
 }
 
 /* Fix Narrator Show/Hide Stretch goal*/
