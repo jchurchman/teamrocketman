@@ -10,6 +10,7 @@ div {
     height: 500px;
     /*transition-delay: 1s;*/
 }
+                  /*STRETCH GOAL Narrator Section */
 
 #closeout {
     height: 15px;
@@ -21,13 +22,14 @@ div {
     left: 5px;
 }
 
+/*
 .showMe {
-    right: 15px;
+    right: 15px;*/
     /*background-color: blue;*/
-}
-
+/*}*/
+/*
 .hideMe {
     right: -480px;
-    /*background-color: blueviolet;*/
-}
+    background-color: blueviolet;
+}*/
 
