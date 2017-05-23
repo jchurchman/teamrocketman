@@ -19,6 +19,7 @@ var submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
+    event.preventDefault();
     welcomeUser.userSubmission();
     welcomeNarrator.saveGuest();
     welcomeNarrator.locallyStoreUser();

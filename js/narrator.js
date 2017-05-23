@@ -55,6 +55,19 @@ function Narrator() {
         critterPic.src = critterSrc;
     };
 
+    this.popContent = function () {
+        this.popSubHeader();
+        this.popNavBar();
+        this.popArticleHeading();
+        this.popCritterBlurb();
+        this.popCritterPic();
+    };
+
+    this.popFontSize = function () {
+        var fontSize = this.guest.fontSize;
+        var header = document.getElementsByTagName('h1')[0];
+        header.innerHTML = '<h1 style=\"font-size: ' + this.guest.fontSize + '\">Your Webpage!</h1>';
+    };
 }
 
 /* Fix Narrator Show/Hide Stretch goal*/
