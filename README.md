@@ -90,6 +90,7 @@ CSS will transform from page 2 to final form.
 
 ### Stretch Goals
 - Narrative Tracker - Keeps tabs on User's place, can't redo journey. (*window.location*)
+- Narrator box can be hidden on side bar of window, and brought back out through clicking its tab
 - Animated narrator
 - WireFrame templates
 - Runaway Button

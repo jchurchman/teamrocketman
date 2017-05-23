@@ -1,6 +1,6 @@
 'use strict';
 
-var userArray = [];
+
 
 function User() {
 
