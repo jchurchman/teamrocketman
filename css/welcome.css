@@ -28,7 +28,12 @@ label {
 
 footer {
     border: 5px solid black;
-    text-align: center;
+    text-align: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
 }
 
 
@@ -36,15 +41,18 @@ footer {
 /*                  Narrator Section */
 
 
-/*div {*/
-    /*background-color: red;
-    position:fixed;
+div {
+    background-color: gray;
+    position:absolute;
+    margin-left: -100px;
     top: 450px;
     right: 0px;
     width: 500px;
     height: 500px;
+    z-index: 10;
+    
     /*transition-delay: 1s;*/
-/*}*/
+/*}
                   /*STRETCH GOAL Narrator Section */
 
 /*#closeout {

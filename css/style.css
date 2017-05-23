@@ -18,5 +18,10 @@ h1, h2 {
 
 footer {
     border: 5px solid black;
-    text-align: center;
+    text-align: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
 }
