@@ -2,7 +2,7 @@
 
 var userArray = [];
 
-function user() {
+function User() {
 
     this.name = '';
     this.color = '';
@@ -10,12 +10,12 @@ function user() {
     this.particle = '';
     this.marsupial = '';
     this.fontSize = 0;
-    this.his.pFont = 0;
-    this.his.margin = 0;
-    this.this.float = '';
+    this.pFont = 0;
+    this.margin = 0;
+    this.float = '';
 
-    this.his.color1 = '';
-    this.his.color2 = '';
+    this.color1 = '';
+    this.color2 = '';
     this.color3 = '';
 
     // this.userSubmission = function() {
@@ -32,9 +32,9 @@ function user() {
         var userArrayStringified = JSON.stringify(userArray);
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
-    }
+    };
 
-};
+}
 
 function marsupial() {
     this.name = name;
