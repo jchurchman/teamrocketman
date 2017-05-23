@@ -69,6 +69,31 @@ function Narrator() {
         var header = document.getElementsByTagName('h1')[0];
         header.innerHTML = '<h1 style=\"font-size: ' + this.guest.fontSize + '\">Your Webpage!</h1>';
     };
+
+    this.popFloat = function () {
+        var floatProp = this.guest.float;
+        var critterPic = document.getElementsByTagName('img') [0];
+        critterPic.setAttribute('class', floatProp);
+    };
+
+    this.popMargin = function () {
+        var marginProp = this.guest.margin;
+        var marginEle = document.getElementsByTagName('p') [0];
+        marginEle.setAttribute('class', marginProp); 
+    };
+
+    this.popFont = function () {
+        var fontProp = this.guest.font;
+        var fontEle = document.getElementsByTagName('p') [0];
+        fontEle.setAttribute('class', fontProp);
+    };
+
+    this.popStyles = function () {
+        this.popFontSize();
+        this.popFloat();
+        this.popMargin();
+        this.popFont();
+    };
 }
 
 /* Fix Narrator Show/Hide Stretch goal*/
