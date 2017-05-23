@@ -1,6 +1,5 @@
 'use strict';
 
-var userArray = [];
 
 var user = {
     name: '',
@@ -26,11 +25,12 @@ var user = {
     },
 
     locallyStoreUser: function() {
-        // userArray = [];
-        // userArray.push(user);
-        var userArrayStringified = JSON.stringify(userArray);
+        var userArrayStringified = JSON.stringify(this);
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
-    }
+    },
 
+    getStoredData: function () {
+        JSON.parse(localStorage.getItem('userArray'));
+    }
 };
