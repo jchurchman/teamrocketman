@@ -10,18 +10,29 @@ layoutNarrator.saveGuest = function() {
 layoutNarrator.getGuest();
 layoutNarrator.popContent();
 
-<<<<<<< HEAD
-var submitButton = document.getElementById('submit');
-submitButton.addEventListener('click', submitHandler);
-=======
-
-
-
+layoutNarrator.getFontSize = function () {
+    var fontSizeProp = document.getElementById('input').value;
+    this.guest.fontSize = fontSizeProp;
+};
+layoutNarrator.getPFont = function () {
+    var pFontProp = document.getElementById('input').value;
+    this.guest.pFont = pFontProp;
+};
+layoutNarrator.getMargin = function () {
+    var marginProp = document.getElementById('input').value;
+    this.guest.margin = marginProp;
+};
+layoutNarrator.getFloat = function () {
+    var floatProp = document.getElementById('input').value;
+    this.guest.float = floatProp;
+};
+// layoutNarrator.talkAtUser = function (speech) {
+//     this.talkLoc.innerText = speech;
+// };
 
 
 // var submitButton = document.getElementById('submit');
 // submitButton.addEventListener('click', submitHandler);
->>>>>>> 484a8d5cca26e075804bf9c9b754fa70b61c470c
 
 // function submitHandler() {
 // /* Submit Button Transition to next page */
