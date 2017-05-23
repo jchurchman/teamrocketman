@@ -49,5 +49,5 @@ function submitHandler() {
     welcomeUser.userSubmission();
     welcomeNarrator.saveGuest();
     welcomeNarrator.locallyStoreUser();
-    // window.location('./layout.html');
+    window.location.href= './layout.html';
 }
