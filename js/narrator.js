@@ -80,6 +80,19 @@ function Narrator() {
         var marginEle = document.getElementsByTagName('p') [0];
         marginEle.setAttribute('class', marginProp); 
     };
+
+    this.popFont = function () {
+        var fontProp = this.guest.font;
+        var fontEle = document.getElementsByTagName('p') [0];
+        fontEle.setAttribute('class', fontProp);
+    };
+
+    this.popStyles = function () {
+        this.popFontSize();
+        this.popFloat();
+        this.popMargin();
+        this.popFont();
+    };
 }
 
 /* Fix Narrator Show/Hide Stretch goal*/
