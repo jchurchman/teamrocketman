@@ -68,6 +68,12 @@ function Narrator() {
         var header = document.getElementsByTagName('h1')[0];
         header.innerHTML = '<h1 style=\"font-size: ' + this.guest.fontSize + '\">Your Webpage!</h1>';
     };
+
+    this.popFloat = function () {
+        var floatProp = this.guest.float;
+        var critterPic = document.getElementsByTagName('img') [0];
+        critterPic.setAttribute('class', floatProp);
+    };
 }
 
 /* Fix Narrator Show/Hide Stretch goal*/
