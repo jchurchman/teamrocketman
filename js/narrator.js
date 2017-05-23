@@ -22,6 +22,41 @@ function Narrator() {
         localStorage.setItem('userInfo', userInfoStringified);
         console.log(localStorage);
     };
+
+    this.getGuest = function () {
+        this.guest = JSON.parse(localStorage.getItem('userInfo'));
+    };
+
+    this.popSubHeader = function () {
+        var subHeader = document.getElementsByTagName('h2')[0];
+var critterName =  this.guest.marsupial.name;
+var userName = this.guest.name;
+subHeader.innerText = 'This is a Webpage about ' + critterName + ' by ' + userName + '.';
+    };
+
+    this.popNavBar = function () {
+        var navBar = document.getElementsByTagName('ul')[0];
+var navContent = '<li>' + this.guest.color + '</li><li>' + this.guest.mood + '</li><li>' + this.guest.particle + '</li>';
+navBar.innerHTML = navContent;
+    };
+
+    this.popArticleHeading = function () {
+        var articleHeadingLoc = document.getElementsByTagName('h3')[0];
+var articleHeading = this.guest.marsupial.name;
+articleHeadingLoc.innerText = articleHeading;
+    };
+
+    this.popCritterBlurb = function () {
+        var critterBlurbLoc = document.getElementsByTagName('p')[0];
+var critterBlurb = this.guest.marsupial.critterBlurb;
+critterBlurbLoc.innerHTML = '<img src=\'\'/>' + critterBlurb;
+    };
+
+    this.popCritterPic = function () {
+        var critterSrc = this.guest.marsupial.filepath;
+critterPic.src = critterSrc;
+    };
+
 }
 
 
