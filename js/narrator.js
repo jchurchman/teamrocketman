@@ -67,7 +67,7 @@ function Narrator() {
     this.popFontSize = function () {
         var fontSize = this.guest.fontSize;
         var header = document.getElementsByTagName('h1')[0];
-        header.innerHTML = '<h1 style=\"font-size: ' + this.guest.fontSize + '\">Your Webpage!</h1>';
+        header.innerHTML = '<h1 style=\"font-size: ' + fontSize + '\">Your Webpage!</h1>';
     };
 
     this.popFloat = function () {
