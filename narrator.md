@@ -1,15 +1,16 @@
-#THE NARRATOR
+# THE NARRATOR
 
-ABOUT US
+# ABOUT US
 nothing
 
-WELCOME PG
+# WELCOME PG
 “Welcome to (makeyourownwebsitegame) (userName)! I'm your Narrator. We’re going to build a webpage. Sounds fun right?! Don’t worry, I’ll help you through it. If you ever get stuck, you can always refer back to me. We just need to collect a few pieces of content from you. Fill out the form above and hit the submit button to get started! "
 
     *(clicks submit button to start the game)*
 
 
-#LAYOUT PG
+# LAYOUT PG
+
 “Great! Look how cute that (marsupial) is. We’ve added the content, so, let’s look at the layout. We'll go through the whole process and if you dont like the formatting, (you can hit the reset button to start over). 
 
 Now, we’re going to add some borders to all of our HTML elements. This will help you better understand what is known as the Box Model. ” 
@@ -40,7 +41,7 @@ When you have images with text that relates to it, you want to see that visually
 "Lastly, we want a horizontal navigation bar. Type 'inline' to change the display of these list items." 
     *(typed 'inline' to look like a nav bar -make display:inline?)*
 
-#COLOR PG
+# COLOR PG
 “		"
     (clicks button to select body and its corresponding color)
 “		"
@@ -48,6 +49,6 @@ When you have images with text that relates to it, you want to see that visually
 “		"
     (clicks button to select p and its corresponding color)
 
-ROUGH DRAFT PG
+# ROUGH DRAFT PG
 
-FINAL PG
+# FINAL PG
