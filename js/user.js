@@ -1,6 +1,6 @@
 'use strict';
 
-function User() {
+function user() {
 
     this.name = '';
     this.color = '';

@@ -16,6 +16,7 @@ var welcomeUser = new User();
 //     }
 
 // }
+//     }
 
 // // var showTab = '';
 // var showTab = document.getElementById('closeout');
@@ -47,12 +48,3 @@ function submitHandler() {
     welcomeUser.locallyStoreUser();
     window.location('./layout.html');
 }
-
-//add userSubmissions as a prototype function of welcomeNarrator
-Narrator.prototype.userSubmission = function () {
-    User.name = document.getElementById('nameInput').value;
-    User.color = document.getElementById('colorInput').value;
-    User.mood = document.getElementById('moodInput').value;
-    User.particle = document.getElementById('particleInput').value;
-    User.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-};
