@@ -1,6 +1,5 @@
 'use strict';
 
-var userArray = [];
 
 var user = {
     name: '',
@@ -17,20 +16,13 @@ var user = {
     color2: '',
     color3: '',
 
-    userSubmission: function() {
-        this.name = document.getElementById('nameInput').value;
-        this.color = document.getElementById('colorInput').value;
-        this.mood = document.getElementById('moodInput').value;
-        this.particle = document.getElementById('particleInput').value;
-        this.marsupial = document.querySelector('input[name = "marsupial"]:checked').value;
-    },
-
     locallyStoreUser: function() {
-        // userArray = [];
-        // userArray.push(user);
-        var userArrayStringified = JSON.stringify(userArray);
+        var userArrayStringified = JSON.stringify(this);
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
-    }
+    },
 
+    getStoredData: function () {
+        JSON.parse(localStorage.getItem('userArray'));
+    }
 };
