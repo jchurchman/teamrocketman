@@ -12,7 +12,7 @@ function Narrator() {
         this.self.setAttribute('class', 'showMe');
     };
     this.getInfo = function () {
-        User = JSON.parse(localStorage.getItem('user'));
+        User = JSON.parse(localStorage.getItem('userInfo'));
     };
 
     this.locallyStoreUser = function () {
@@ -46,11 +46,12 @@ function Narrator() {
 
     this.popCritterBlurb = function () {
         var critterBlurbLoc = document.getElementsByTagName('p')[0];
-        var critterBlurb = this.guest.marsupial.critterBlurb;
+        var critterBlurb = this.guest.marsupial.blurb;
         critterBlurbLoc.innerHTML = '<img src=\'\'/>' + critterBlurb;
     };
 
     this.popCritterPic = function () {
+        var critterPic = document.getElementsByTagName('img');
         var critterSrc = this.guest.marsupial.filepath;
         critterPic.src = critterSrc;
     };
