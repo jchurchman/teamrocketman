@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 function User() {
 
     this.name = '';
@@ -33,7 +31,6 @@ function User() {
         localStorage.setItem('userArray', userArrayStringified);
         console.log(localStorage);
     };
-
 }
 
 function marsupial() {
