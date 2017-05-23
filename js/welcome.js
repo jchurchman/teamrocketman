@@ -8,7 +8,7 @@ welcomeNarrator.saveGuest = function() {
 };
 
 welcomeUser.userSubmission = function() {
-    this.name = document.getElementById('nameInput').value;
+    this.userName = document.getElementById('userNameInput').value;
     this.color = document.getElementById('colorInput').value;
     this.mood = document.getElementById('moodInput').value;
     this.particle = document.getElementById('particleInput').value;

@@ -4,16 +4,13 @@ function Narrator() {
 
     this.guest = {};
 
-    this.self = document.getElementsByTagName('div')[0];
-    this.hideMe = function () {
-        this.self.setAttribute('class', 'hideMe');
-    };
-    this.showMe = function () {
-        this.self.setAttribute('class', 'showMe');
-    };
-    this.getInfo = function () {
-        User = JSON.parse(localStorage.getItem('userInfo'));
-    };
+    // this.self = document.getElementsByTagName('div')[0];
+    // this.hideMe = function () {
+    //     this.self.setAttribute('class', 'hideMe');
+    // };
+    // this.showMe = function () {
+    //     this.self.setAttribute('class', 'showMe');
+    // };
 
     this.locallyStoreUser = function () {
         var userInfoStringified = JSON.stringify(this.guest);
@@ -27,9 +24,9 @@ function Narrator() {
 
     this.popSubHeader = function () {
         var subHeader = document.getElementsByTagName('h2')[0];
-        var critterName = this.guest.marsupial.name;
-        var userName = this.guest.name;
-        subHeader.innerText = 'This is a Webpage about ' + critterName + ' by ' + userName + '.';
+        var critterNamed = this.guest.marsupial.critterName;
+        var userCalled = this.guest.userName;
+        subHeader.innerText = 'This is a Webpage about ' + critterNamed + ' by ' + userCalled + '.';
     };
 
     this.popNavBar = function () {
@@ -40,7 +37,7 @@ function Narrator() {
 
     this.popArticleHeading = function () {
         var articleHeadingLoc = document.getElementsByTagName('h3')[0];
-        var articleHeading = this.guest.marsupial.name;
+        var articleHeading = this.guest.marsupial.critterName;
         articleHeadingLoc.innerText = articleHeading;
     };
 
