@@ -98,7 +98,7 @@ function Narrator() {
 };
 
     this.hearUser = function () {
-    this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text" style="height: 20px width: 60px"/>';
+    this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
     };
 }
 
