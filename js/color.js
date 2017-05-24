@@ -3,21 +3,6 @@
 var colorNarrator = new Narrator ();
 var colorUser = new User();
 
-colorNarrator.saveGuest = function() {
-    this.guest = colorUser;
-};
-
-var submitButton = document.getElementById('buttonOne');
-submitButton.addEventListener('click', submitHandler);
-
-function submitHandler() {
-    event.preventDefault();
-    // colorUser.userSubmission();
-    colorNarrator.saveGuest();
-    colorNarrator.locallyStoreUser();
-    window.location.href= './roughdraft.html';
-}
-
 var colorPhaseOne = new Phase (
     'Welcome to a world of color! Black and white can be very appealing, but color can also add a lot to a page. Let\'s experiment! First, choose a color for the background of your page.',
     '<input type="submit" value="Onward!"',
@@ -43,6 +28,28 @@ var colorPhaseFour = new Phase (
     'What do you think? If you\'re happy with it, submit it to see your changes, so far.',
     '<input type="submit" value="Onward!"'
 );
+
+colorNarrator.saveGuest = function() {
+    this.guest = colorUser;
+};
+
+var onloadPage = function() {
+colorNarrator.talkLoc.innerText = colorPhaseOne.talkAt;
+};
+
+onloadPage();
+
+var submitButton = document.getElementById('buttonOne');
+submitButton.addEventListener('click', submitHandler);
+
+function submitHandler() {
+    event.preventDefault();
+    // colorUser.userSubmission();
+    colorNarrator.saveGuest();
+    colorNarrator.locallyStoreUser();
+    window.location.href= './roughdraft.html';
+}
+
 
 
 
