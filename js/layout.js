@@ -26,6 +26,11 @@ layoutNarrator.getFloat = function () {
     var floatProp = document.getElementById('input').value;
     this.guest.float = floatProp;
 };
+layoutNarrator.talkAt = [];
+layoutNarrator.listenTo = [];
+layoutNarrator.moveOn = [];
+
+
 // layoutNarrator.talkAtUser = function (speech) {
 //     this.talkLoc.innerText = speech;
 // };

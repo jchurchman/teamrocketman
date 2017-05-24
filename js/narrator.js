@@ -4,7 +4,10 @@ function Narrator() {
 
     this.guest = {};
     this.talkLoc = document.getElementById('talkLoc');
-    this.listenLoc = document.getElementById('inputSpot');
+    this.listenLoc = document.getElementById('inputOne');
+    this.listenLoc2 = document.getElementById('inputTwo');
+    this.buttonOne = document.getElementById('buttonOne');
+    this.buttonTwo = document.getElementById('buttonTwo');
     // this.self = document.getElementsByTagName('div')[0];
     // this.hideMe = function () {
     //     this.self.setAttribute('class', 'hideMe');
@@ -94,11 +97,11 @@ function Narrator() {
     };
 
     this.talkAtUser = function (speech) {
-    this.talkLoc.innerText = speech;
-};
+        this.talkLoc.innerText = speech;
+    };
 
     this.hearUser = function () {
-    this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text" style="height: 20px width: 60px"/>';
+        this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
     };
 }
 
