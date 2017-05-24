@@ -29,7 +29,7 @@ welcomeUser.userSubmission = function() {
     }
 };
 
-var submitButton = document.getElementById('submit');
+var submitButton = document.getElementById('buttonOne');
 submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
