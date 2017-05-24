@@ -1,11 +1,30 @@
+/*            Footer Section */
+
 footer {
     border: 5px solid black;
     text-align: left;
     padding-left: 50px;
     padding-top: 25px;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    position: absolute;
-    z-index: 0;
+    /*z-index: 5;*/
+}
+
+/*                  Narrator Section */
+
+#narrator {
+    background-color: gray;
+    position:fixed;
+    margin-left: -100px;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    min-height: 300px;
+    z-index: 10;
+    height: auto;
+    /*max-height: 600px;
+    overflow: scroll;*/
+    /*transition-delay: 1s;*/
 }
