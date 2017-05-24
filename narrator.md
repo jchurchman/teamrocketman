@@ -1,15 +1,15 @@
 # THE NARRATOR
 
-# ABOUT US
+## ABOUT US
 nothing
 
-# WELCOME PG
+## WELCOME PG
 “Welcome to (makeyourownwebsitegame) (userName)! I'm your Narrator. We’re going to build a webpage. Sounds fun right?! Don’t worry, I’ll help you through it. If you ever get stuck, you can always refer back to me. We just need to collect a few pieces of content from you. Fill out the form above and hit the submit button to get started! "
 
     *(clicks submit button to start the game)*
 
 
-# LAYOUT PG
+## LAYOUT PG
 
 “Great! Look how cute that (marsupial) is. We’ve added the content, so, let’s look at the layout. We'll go through the whole process and if you dont like the formatting, (you can hit the reset button to start over). 
 
@@ -41,14 +41,37 @@ When you have images with text that relates to it, you want to see that visually
 "Lastly, we want a horizontal navigation bar. Type 'inline' to change the display of these list items." 
     *(typed 'inline' to look like a nav bar -make display:inline?)*
 
-# COLOR PG
-“		"
-    (clicks button to select body and its corresponding color)
-“		"
-    (clicks button to select h1 and its corresponding color)
-“		"
-    (clicks button to select p and its corresponding color)
+"Great job! We've formatted our page, let's add some color to make it pop."
+    *(clicks submit button to move onto color page)*
 
-# ROUGH DRAFT PG
 
-# FINAL PG
+
+## COLOR PG
+*create radio buttons for color options for each element*
+
+“ Welcome to a world of color! Black and white can be very appealing, but color can also add a lot to a page. Let's experiment! 
+First, choose a color for the background of your page. 	"
+    *(clicks radio button to select backgroundcolor of the body- options: grey, lightblue)*
+“Next, choose a color for the color of your header.		"
+    *(clicks radio button to select font color of h1 - options: darkgreen, maroon)*
+“Lastly, choose a color for the color of your paragraph.	"
+    *(clicks radio button to select font color of p - options: darkblue, red)*
+
+"What do you think? If you're happy with it, submit it to see your changes so far."
+    *(user clicks submit to move onto rough draft, or reset button to start over)*
+
+
+
+## ROUGH DRAFT PG
+"This is pretty much what your page looks like after incorporating the choices you've made. We want to show you the final page, but we've lost the link to the final submit button! In order to find the button, we need your help selecting an element from the drop down menu. "
+
+    *give user list of elements (drop down) and select an element, then click hide it button - element will disappear from pg and drop down menu*
+    *user chooses h1 - h1 disappears*
+    *user chooses p - p disappears*
+    *user chooses img - img disappears (AND VOILA THEY FOUND THE BUTTON)*
+
+
+
+## FINAL PG
+
+    *(user sees animation of start to finish of their page )*
