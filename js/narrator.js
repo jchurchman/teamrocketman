@@ -99,6 +99,8 @@ function Narrator() {
     };
 }
 
+
+
 /* Fix Narrator Show/Hide Stretch goal*/
 // var button = document.getElementById('closeout');
 // button.addEventListener('click', hideMeHandler);
