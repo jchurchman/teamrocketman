@@ -4,7 +4,10 @@ function Narrator() {
 
     this.guest = {};
     this.talkLoc = document.getElementById('talkLoc');
-    this.listenLoc = document.getElementById('inputSpot');
+    this.listenLoc = document.getElementById('inputOne');
+    this.listenLoc2 = document.getElementById('inputTwo');
+    this.buttonOne = document.getElementById('buttonOne');
+    this.buttonTwo = document.getElementById('buttonTwo');
     // this.self = document.getElementsByTagName('div')[0];
     // this.hideMe = function () {
     //     this.self.setAttribute('class', 'hideMe');
@@ -27,7 +30,7 @@ function Narrator() {
         var subHeader = document.getElementsByTagName('h2')[0];
         var critterNamed = this.guest.marsupial.critterName;
         var userCalled = this.guest.userName;
-        subHeader.innerText = 'This is a Webpage about ' + critterNamed + ' by ' + userCalled + '.';
+        subHeader.innerText = 'This is a Webpage about ' + critterNamed + 's by ' + userCalled + '.';
     };
 
     this.popNavBar = function () {
