@@ -67,7 +67,7 @@ First, choose a color for the background of your page. "
     *(clicks radio button to select font color of p - options: darkblue, red)*
 
 "What do you think? If you're happy with it, submit it to see your changes, so far."
-    *(user clicks submit to move onto rough draft, or reset button to start over)*
+    *(user clicks submit to move onto rough draft, or reset button to start over, need to remove all borders before moving onto rough draft)*
 
     *(Stretch Goal OR user clicks reset button to start over)*
 
