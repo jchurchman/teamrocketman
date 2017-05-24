@@ -22,6 +22,14 @@ function Marsupial( critterName, id, filepath, blurb ) {
     this.blurb = blurb;
 }
 
+function Phase(talkAt, buttonOne, inputOne, inputTwo, buttonTwo) {
+    this.talkAt = talkAt;
+    this.buttonOne = buttonOne;
+    this.inputOne = inputOne;
+    this.inputTwo = inputTwo;
+    this.buttonTwo = buttonTwo;
+}
+
 // var critter = new Marsupial ( 'Tigger', 'tigger', './img/tigger.jpg', 'Tiggers are wonderful things, the wonderful thing about tiggers is I\'m the only one')
 
 // var kangaroo = new Marsupial ('Kangaroo', 'kangaroo', '.img/kangaroo.jpg', 'The kangaroo is a marsupial from the family Macropodidae (macropods, meaning "large foot"). In common use the term is used to describe the largest species from this family, especially those of the genus Macropus: the red kangaroo, antilopine kangaroo, eastern grey kangaroo, and western grey kangaroo. Kangaroos are endemic to Australia. The Australian government estimates that 34.3 million kangaroos lived within the commercial harvest areas of Australia in 2011, up from 25.1 million one year earlier.');
