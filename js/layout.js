@@ -3,6 +3,7 @@
 var layoutNarrator = new Narrator();
 var layoutUser = new User();
 
+
 var layoutPhaseOne = new Phase('Great! Look how cute that (marsupial) is. We’ve added the content, so, let’s look at the layout. We\'ll go through the whole process and if you don\'t like the formatting, you can hit the reset button to start over. Now, we\’re going to add borders to all of our HTML elements. This will help you better understand what is known as the Box Model.', '<input type=\'submit\' value = \'Okay\'>', null, null, null);
 
 var layoutPhaseTwo = new Phase('Basically every element on your webpage is in a box. We’ve added these borders to show you how your elements interact with one another (don’t worry, we’ll get rid of them after we’re done formatting the page). We want our web pages to look appealing by giving them some white space. So, let’s add some margins, make your choice below.', '<input type=\'submit\' value = \'Small\'>', null, null, '<input type=\'submit\' value = \'Large\'>');
@@ -18,6 +19,7 @@ var layoutPhaseSix = new Phase('We\'re almost there! The last step is to create 
 var layoutPhaseSeven = new Phase('Lastly, we want a horizontal navigation bar. Right now the list is stacked, which is a block dislay. Let\'s change the display to inline.', '<input type=\'submit\' value = \'Submit\'>', null, null, null);
 
 var layoutPhaseEight = new Phase('Great job! We\'ve formatted our page. Let\'s add some color to make it pop.', '<input type=\'submit\' value = \'Move on\'>', null, null, '<input type=\'submit\' value = \'Reset\'>');
+
 
 var onLoadPage = function () {
     layoutNarrator.talkLoc.innerText = layoutPhaseOne.talkAt;
@@ -67,8 +69,6 @@ layoutNarrator.popContent();
 //         }
 //     }
 // }
-
-
 
 // layoutNarrator.talkAtUser = function (speech) {
 //     this.talkLoc.innerText = speech;
