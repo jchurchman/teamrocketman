@@ -94,11 +94,11 @@ function Narrator() {
     };
 
     this.talkAtUser = function (speech) {
-    this.talkLoc.innerText = speech;
-};
+        this.talkLoc.innerText = speech;
+    };
 
     this.hearUser = function () {
-    this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
+        this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
     };
 }
 
