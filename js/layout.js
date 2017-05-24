@@ -59,14 +59,14 @@ var layoutPhaseEight = new Phase('Great job! We\'ve formatted our page. Let\'s a
 // };
 
 
-// var submitButton = document.getElementById('submit');
-// submitButton.addEventListener('click', submitHandler);
+var submitButton = document.getElementById('buttonOne');
+submitButton.addEventListener('click', submitHandler);
 
-// function submitHandler() {
-// /* Submit Button Transition to next page */
-//     event.preventDefault();
-//     layoutUser.userSubmission();
-//     layoutNarrator.saveGuest();
-//     layoutNarrator.locallyStoreUser();
-//     window.location.href= './color.html';
-// }
+function submitHandler() {
+/* Submit Button Transition to next page */
+    event.preventDefault();
+    // layoutUser.userSubmission();
+    layoutNarrator.saveGuest();
+    layoutNarrator.locallyStoreUser();
+    window.location.href= './color.html';
+}
