@@ -4,17 +4,10 @@ function Narrator() {
 
     this.guest = {};
     this.talkLoc = document.getElementById('talkLoc');
-    this.listenLoc = document.getElementById('inputOne');
-    this.listenLoc2 = document.getElementById('inputTwo');
+    this.listenLocOne = document.getElementById('inputOne');
+    this.listenLocTwo = document.getElementById('inputTwo');
     this.buttonOne = document.getElementById('buttonOne');
     this.buttonTwo = document.getElementById('buttonTwo');
-    // this.self = document.getElementsByTagName('div')[0];
-    // this.hideMe = function () {
-    //     this.self.setAttribute('class', 'hideMe');
-    // };
-    // this.showMe = function () {
-    //     this.self.setAttribute('class', 'showMe');
-    // };
 
     this.locallyStoreUser = function () {
         var userInfoStringified = JSON.stringify(this.guest);
@@ -95,6 +88,7 @@ function Narrator() {
         this.popMargin();
         this.popFont();
     };
+/* rewrite these functions given new organization*/
 
     this.talkAtUser = function (speech) {
         this.talkLoc.innerText = speech;
