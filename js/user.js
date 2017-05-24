@@ -13,6 +13,10 @@ function User() {
     this.color1 = '';
     this.color2 = '';
     this.color3 = '';
+    this.saveInfo = function(parameter) {
+    this[parameter] = Narrator.listenLocOne;
+};
+
 }
 
 function Marsupial( critterName, id, filepath, blurb ) {

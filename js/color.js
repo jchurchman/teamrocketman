@@ -12,7 +12,7 @@ submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
     event.preventDefault();
-    colorUser.userSubmission();
+    // colorUser.userSubmission();
     colorNarrator.saveGuest();
     colorNarrator.locallyStoreUser();
     window.location.href= './roughdraft.html';
