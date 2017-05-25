@@ -12,7 +12,6 @@ function Narrator() {
     this.locallyStoreUser = function () {
         var userInfoStringified = JSON.stringify(this.guest);
         localStorage.setItem('userInfo', userInfoStringified);
-        console.log(localStorage);
     };
 
     this.getGuest = function () {
@@ -59,27 +58,28 @@ function Narrator() {
     };
 
     this.popFontSize = function () {
-        var fontSize = this.guest.fontSize;
-        var header = document.getElementsByTagName('h1')[0];
-        header.innerHTML = '<h1 style=\"font-size: ' + fontSize + '\">Your Webpage!</h1>';
+        var userFontSize = this.guest.fontSize;
+        var headerLoc = document.getElementsByTagName('h1')[0];
+        headerLoc.style.fontSize = userFontSize + 'px';
     };
 
     this.popFloat = function () {
         var floatProp = this.guest.float;
-        var critterPic = document.getElementsByTagName('img') [0];
-        critterPic.setAttribute('class', floatProp);
+        var critterPicLoc = document.getElementsByTagName('img') [0];
+        critterPicLoc.setAttribute('class', floatProp);
     };
 
     this.popMargin = function () {
         var marginProp = this.guest.margin;
-        var marginEle = document.getElementsByTagName('p') [0];
-        marginEle.setAttribute('class', marginProp); 
+        var marginEle = document.getElementsByTagName('main') [0];
+        marginEle.style.marginLeft = marginProp + 'px'; 
+        marginEle.style.marginRight = marginProp + 'px'; 
     };
 
     this.popFont = function () {
-        var fontProp = this.guest.font;
-        var fontEle = document.getElementsByTagName('p') [0];
-        fontEle.setAttribute('class', fontProp);
+        var fontProp = this.guest.pFont;
+        var fontEle = document.getElementsByTagName('body')[0];
+        fontEle.style.fontFamily = fontProp;
     };
 
     this.popStyles = function () {

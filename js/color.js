@@ -4,6 +4,10 @@ var colorNarrator = new Narrator();
 var colorUser = new User();
 var currentPhase = 1;
 
+colorNarrator.getGuest();
+colorNarrator.popContent();
+colorNarrator.popStyles();
+
 var colorPhaseOne = new Phase(
     'Welcome to a world of color! Black and white can be very appealing, but color can also add a lot to a page. Let\'s experiment! First, choose a color for the background of your page.',
     '<input type="submit" value="Grey">',
@@ -36,6 +40,18 @@ var colorPhaseFour = new Phase(
     null,
     '<p>You\'re doing so well.</p>'
 );
+colorNarrator.popPageUser = function () {
+    colorUser = this.guest;
+};
+
+var onLoadPage = function () {
+    colorNarrator.talkLoc.innerText = colorPhaseOne.talkAt;
+    colorNarrator.buttonOne.innerHTML = colorPhaseOne.buttonOne;
+    colorNarrator.listenLocOne.innerHTML = colorPhaseOne.inputOne;
+    colorNarrator.listenLocTwo.innerHTML = colorPhaseOne.inputTwo;
+    colorNarrator.buttonTwo.innerHTML = colorPhaseOne.buttonTwo;
+    colorNarrator.popPageUser();
+};
 
 Phase.prototype.executePhase = function () {
     colorNarrator.talkLoc.innerText = this.talkAt;
@@ -58,17 +74,19 @@ colorNarrator.saveGuest = function () {
     this.guest = colorUser;
 };
 
-//  give the user a page to view
+onLoadPage();
 
 colorPhaseOne.executePhase();
 
-var submitButton = document.getElementsByTagName('form')[0];
+var submitButton = document.getElementById('buttonDiv');
 submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
     event.preventDefault();
-    console.log('did it work?');
-    if (currentPhase === 1) {
+    // if (!event.target.id) {
+    //     return;
+    // }
+    if (currentPhase === 1 && event.target.value) {
         var selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color1 = selectedColor;
@@ -76,7 +94,7 @@ function submitHandler() {
         colorPhaseTwo.executePhase();
         currentPhase += 1;
     }
-    else if (currentPhase === 2) {
+    else if (currentPhase === 2 && event.target.value) {
         var selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color2 = selectedColor;
@@ -84,7 +102,7 @@ function submitHandler() {
         colorPhaseThree.executePhase();
         currentPhase += 1;
     }
-    else if (currentPhase === 3) {
+    else if (currentPhase === 3 && event.target.value) {
         var selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color3 = selectedColor;
@@ -92,13 +110,12 @@ function submitHandler() {
         colorPhaseFour.executePhase();
         currentPhase += 1;
     }
-    else {
+    else if (currentPhase === 4 && event.target.value) {
         //save to localstorage and move to next page
         colorNarrator.saveGuest();
         colorNarrator.locallyStoreUser();
         window.location.href = './roughdraft.html';
     }
-
 }
 
 
