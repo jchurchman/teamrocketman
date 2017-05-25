@@ -107,7 +107,7 @@ function submitHandler() {
     } else if (currentPhase === 6) {
         var listStyleInput = document.getElementById('inputFieldOne').value;
         var listLoc = document.getElementsByTagName('ul')[0];
-/*  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$        */
+/*          $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$        */
 /*REDO ALL TAG STYLE CHANGES AS FOLLOWS*/
         listLoc.style.listStyleType = listStyleInput;
         layoutNarrator.clearThroat();
