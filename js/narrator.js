@@ -22,7 +22,7 @@ function Narrator() {
         var subHeader = document.getElementsByTagName('h2')[0];
         var critterNamed = this.guest.marsupial.critterName;
         var userCalled = this.guest.userName;
-        subHeader.innerText = 'This is a Webpage about ' + critterNamed + 's by ' + userCalled + '.';
+        subHeader.innerText = 'This is a Webpage about ' + critterNamed + 's, by ' + userCalled + '.';
     };
 
     this.popNavBar = function () {
