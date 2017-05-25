@@ -22,7 +22,7 @@ var layoutPhaseTwo = new Phase(
     '<input type=\'submit\' value = \'Large\' id=\'actualButtonTwo\'>');
 
 var layoutPhaseThree = new Phase(
-    'Doesn’t that look better? We’ve centered the content on our page, utilizing white space. We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size. Right now our font is set to 24px. Try typing in 32 for the pixel value of the header.',
+    'Doesn’t that look better? We’ve indented the content on our page, utilizing white space. We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size. Right now our font is set to 24px. Try typing in 32 for the pixel value of the header.',
     '<input type=\'submit\' value = \'submit\' id=\'actualButtonOne\'>',
     '<input id=\'inputFieldOne\' type=\'text\'>',
     null,
@@ -30,10 +30,10 @@ var layoutPhaseThree = new Phase(
 
 var layoutPhaseFour = new Phase(
     'Great, our header is set. When you have images with text that relates to it, you want to access that visually. The float property will allow us to do this by putting the text next to the image.',
-    '<input type=\'submit\' value = \'Left\' id=\'actualButtonOne\'>',
+    '<input type=\'submit\' value = \'left\' id=\'actualButtonOne\'>',
     null,
     null, 
-    '<input type=\'submit\' value = \'Right\' id=\'actualButtonTwo\'>');
+    '<input type=\'submit\' value = \'right\' id=\'actualButtonTwo\'>');
 
 var layoutPhaseFive = new Phase(
     'Now that our content is formatted, let\'s choose the font. Currently, the paragraph font is (Times) and we want to make it sans-serif to match the rest of our page. Select a font from the menu below.',
@@ -104,15 +104,22 @@ function submitHandler() {
     if (currentPhase === 1) {
         var headerTag = document.getElementsByTagName('header')[0];
         var mainTag = document.getElementsByTagName('main')[0];
-        headerTag.setAttribute('class', 'border');
-        mainTag.setAttribute('class', 'border');
+        headerTag.style.border = '2px solid black';
+        mainTag.style.border = '2px solid black';
         layoutNarrator.clearThroat();
         layoutPhaseTwo.executePhase();
         currentPhase += 1;
     } else if (currentPhase === 2) {
-        var selectedMargin = event.target.value;
+        var selectedMargin;
+
+        if (event.target.value === 'Small') {
+            selectedMargin = '100px';
+        } else if (event.target.value === 'Large'){
+            selectedMargin = '300px';
+        }
+
         layoutUser.margin = selectedMargin;
-        document.getElementsByTagName('body')[0].setAttribute('class', selectedMargin);
+        document.getElementsByTagName('main')[0].style.marginLeft = selectedMargin;
         layoutNarrator.clearThroat();
         layoutPhaseThree.executePhase();
         currentPhase += 1;
@@ -120,7 +127,7 @@ function submitHandler() {
         var headerInput = document.getElementById('inputFieldOne').value;
         layoutUser.fontSize = headerInput;
         var headerLoc = document.getElementsByTagName('h1')[0];
-        headerLoc.innerHTML = '<h1 style="font-size:' + headerInput + 'px">Your Webpage!</h1>';
+        headerLoc.style.fontSize = headerInput + 'px';
         layoutNarrator.clearThroat();
         layoutPhaseFour.executePhase();
         currentPhase += 1;
@@ -128,15 +135,17 @@ function submitHandler() {
         var selectedFloat = event.target.value;
         layoutUser.float = selectedFloat;
         var imageFloat = document.getElementsByTagName('img')[0];
-        imageFloat.setAttribute('class', selectedFloat);
+        imageFloat.style.float = selectedFloat;
         layoutNarrator.clearThroat();
         layoutPhaseFive.executePhase();
         currentPhase += 1;
     } else if (currentPhase === 5) {
         var selectedFont = document.querySelector('#inputFieldOne option:checked').value;
         layoutUser.pFont = selectedFont;
-        var pfontLoc = document.getElementById('mainParagraph');
-        pfontLoc.innerHTML = '<p style="font-family:' + selectedFont + '"><img src=\'\'/>' + layoutNarrator.guest.marsupial.blurb + '</p>';
+        var pfontLoc = document.getElementsByTagName('p');
+        for (var i = 0; i < pfontLoc.length - 2; i++) {
+            pfontLoc[i].style.fontFamily = selectedFont;
+        }
         layoutNarrator.popCritterPic();
         layoutNarrator.clearThroat();
         layoutPhaseSix.executePhase();
@@ -153,7 +162,7 @@ function submitHandler() {
     } else if (currentPhase === 7) {
         var navBarLI = document.getElementsByTagName('li');
         for (var i = 0; i < navBarLI.length; i++){
-        navBarLI[i].style.display = 'inline-block';
+            navBarLI[i].style.display = 'inline-block';
         }
         layoutNarrator.clearThroat();
         layoutPhaseEight.executePhase();

@@ -89,6 +89,17 @@ function Narrator() {
         this.popFont();
     };
 
+    this.popColors = function () {
+        var bodyBody = document.getElementsByTagName('body')[0];
+        var headerText = document.getElementsByTagName('h1')[0];
+        var pText = document.getElementsByTagName('p');
+        bodyBody.style.backgroundColor = this.guest.color1;
+        headerText.style.color = this.guest.color2;
+        for (var i = 0; i < pText.length-2; i++) {
+            pText[i].style.color = this.guest.color3;
+        }
+    };
+
     this.clearThroat = function () {
         this.buttonOne.removeChild(document.getElementById('actualButtonOne'));
         if (document.getElementById('inputFieldOne')) {

@@ -73,7 +73,9 @@ First, choose a color for the background of your page. "
 
 
 ## ROUGH DRAFT PG
-"This is pretty much what your page looks like after incorporating the choices that you've made. Uh oh! We want to show you the final page, but we've lost the link to the final submit button! In order to find the button, we need your help selecting an element from the drop-down menu. "
+"This is pretty much what your page looks like after incorporating the choices that you've made. We want to show you the final page, but we've lost the link to the final submit button! Click below to find it. 
+
+In order to find the button, we need your help selecting an element from the drop-down menu. "
 
     *give user list of elements (drop down) and select an element, then click hide it button - element will disappear from pg and drop down menu*
     *user chooses h1 - h1 disappears*
