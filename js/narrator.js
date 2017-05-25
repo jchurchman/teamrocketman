@@ -66,14 +66,15 @@ function Narrator() {
     this.popFloat = function () {
         var floatProp = this.guest.float;
         var critterPicLoc = document.getElementsByTagName('img') [0];
-        critterPicLoc.setAttribute('class', floatProp);
+        critterPicLoc.style.float = floatProp;
+        // critterPicLoc.setAttribute('class', floatProp);
     };
 
     this.popMargin = function () {
         var marginProp = this.guest.margin;
         var marginEle = document.getElementsByTagName('main') [0];
-        marginEle.style.marginLeft = marginProp + 'px'; 
-        marginEle.style.marginRight = marginProp + 'px'; 
+        marginEle.style.marginLeft = marginProp; 
+        marginEle.style.marginRight = marginProp; 
     };
 
     this.popFont = function () {
