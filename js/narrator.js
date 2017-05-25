@@ -91,9 +91,19 @@ function Narrator() {
 
     this.clearThroat = function () {
         this.buttonOne.removeChild(document.getElementById('actualButtonOne'));
+        if (document.getElementById('inputFieldOne')) {
         this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
+        }
+        if (document.getElementById('inputFieldTwo')) {
         this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
+        }
+        if (document.getElementById('actualButtonTwo')) {
         this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
+        }
+
+        // this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
+        // this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
+        // this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
 
