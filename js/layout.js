@@ -15,7 +15,7 @@ var layoutPhaseThree = new Phase('Doesn’t that look better? We’ve centered t
 
 var layoutPhaseFour = new Phase('Great, our header is set. When you have images with text that relates to it, you want to access that visually. The float property will allow us to do this by putting the text next to the image.', '<input type=\'submit\' value = \'Left\' id=\'actualButtonOne\'>', null, null, '<input type=\'submit\' value = \'Right\' id=\'actualButtonTwo\'>');
 
-var layoutPhaseFive = new Phase('Now that our content is formatted, let\'s choose the font. Currently, the paragraph font is (Times) and we want to make it sans-serif to match the rest of our page. Select a font from the menu below.', '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>', '<select class = \'inputBox\' id=\'fontDropdown\' name = \'Font List\'> <option value = Arial> Arial</option> <option value = Helvetica> Helvetica</option> <option value= \'Raleway\'>Raleway</option>', null, null);
+var layoutPhaseFive = new Phase('Now that our content is formatted, let\'s choose the font. Currently, the paragraph font is (Times) and we want to make it sans-serif to match the rest of our page. Select a font from the menu below.', '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>', '<select class = \'inputBox\' id=\'inputFieldOne\' name = \'Font List\'> <option value = Arial> Arial</option> <option value = Helvetica> Helvetica</option> <option value= \'Raleway\'>Raleway</option>', null, null);
 
 var layoutPhaseSix = new Phase('We\'re almost there! The last step is to create a navigation bar from the list that you created on the last page. First, we need to get rid of the bullet points, which is a list style. In the field below, type \'none\' to remove the bullet points.', '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>', '<input type = \'text\' id=\'inputFieldOne\'>', null, null);
 
@@ -96,7 +96,7 @@ function submitHandler() {
         layoutPhaseFive.executePhase();
         currentPhase += 1;
     } else if (currentPhase === 5) {
-        var selectedFont = document.querySelector('#fontDropdown option:checked').value;
+        var selectedFont = document.querySelector('#inputFieldOne option:checked').value;
         layoutUser.pFont = selectedFont;
         var pfontLoc = document.getElementById('mainParagraph');
         pfontLoc.innerHTML = '<p style="font-family:' + selectedFont + '"><img src=\'\'/>' + layoutNarrator.guest.marsupial.blurb + '</p>';
@@ -110,6 +110,7 @@ function submitHandler() {
 /*          $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$        */
 /*REDO ALL TAG STYLE CHANGES AS FOLLOWS*/
         listLoc.style.listStyleType = listStyleInput;
+        listLoc.setAttribute('style', listStyleInput);
         layoutNarrator.clearThroat();
         layoutPhaseSeven.executePhase();
         currentPhase += 1;
