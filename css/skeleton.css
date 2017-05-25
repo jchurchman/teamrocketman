@@ -182,9 +182,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: white;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: none;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -198,7 +198,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
+  background-color:lightgray;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -207,7 +207,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+  /*border-color: #33C3F0; */
+  }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -272,10 +273,15 @@ label,
 legend {
   display: block;
   margin-bottom: .5rem;
+  margin-right: 20px;
+  padding: 2px;
+  width: 400px;
+  background: white;
   font-weight: 600; }
 fieldset {
   padding: 0;
-  border-width: 0; }
+  padding-bottom: 30px;
+  border-width: 1px solid black; }
 input[type="checkbox"],
 input[type="radio"] {
   display: inline; }
