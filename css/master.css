@@ -16,6 +16,7 @@ body {
 
 footer {
     /*border: 2px solid black;*/
+    font: Arial;
     background: black;
     color: white;
     text-align: left;
