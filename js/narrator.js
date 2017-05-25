@@ -118,21 +118,3 @@ function Narrator() {
         // this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
-
-
-
-/* Fix Narrator Show/Hide Stretch goal*/
-// var button = document.getElementById('closeout');
-// button.addEventListener('click', hideMeHandler);
-// function hideMeHandler() {
-//     event.preventDefault();
-//     Narrator.hideMe();
-// }
-
-
-// var showTab = document.getElementsByClassName('hideMe');
-// showTab.addEventListener('hover', showTabHandler);
-// function showTabHandler() {
-//     event.preventDefault();
-//     Narrator.showTab();
-// }
