@@ -15,49 +15,49 @@ var layoutPhaseOne = new Phase(
     null);
 
 var layoutPhaseTwo = new Phase(
-    'Basically every element on your webpage is in a box. We’ve added these borders to show you how your elements interact with one another (don’t worry, we’ll get rid of them after we’re done formatting the page). We want our web pages to look appealing by giving them some white space. So, let’s add some margins, make your choice below.',
+    'Basically, every element on your webpage is in a box.<br></br>We’ve added these borders to show you how your elements interact with one another (don’t worry, we’ll get rid of them after we’re done formatting the page).<br></br>We want our web pages to look appealing by giving them some white space. So, let’s add some margins, make your choice below.',
     '<input type=\'submit\' value = \'Small\' id=\'actualButtonOne\'>',
     null,
     null, 
     '<input type=\'submit\' value = \'Large\' id=\'actualButtonTwo\'>');
 
 var layoutPhaseThree = new Phase(
-    'Doesn’t that look better? We’ve indented the content on our page, utilizing white space. We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size. Right now our font is set to 24px. Try typing in 32 for the pixel value of the header.',
+    'Doesn’t that look better?  We’ve indented the content on our page, utilizing white space.<br></br>We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size.<br></br>Right now our font is set to 24px.  Try typing in 72 for the pixel value of the header.',
     '<input type=\'submit\' value = \'submit\' id=\'actualButtonOne\'>',
     '<input id=\'inputFieldOne\' type=\'text\'>',
     null,
     null);
 
 var layoutPhaseFour = new Phase(
-    'Great, our header is set. When you have images with text that relates to it, you want to access that visually. The float property will allow us to do this by putting the text next to the image.',
+    'Great, our header is set.<br></br>When you have images with text that relates to it, you want to assess that visually. The float property will allow us to do this by placing the text next to the image.',
     '<input type=\'submit\' value = \'left\' id=\'actualButtonOne\'>',
     null,
     null, 
     '<input type=\'submit\' value = \'right\' id=\'actualButtonTwo\'>');
 
 var layoutPhaseFive = new Phase(
-    'Now that our content is formatted, let\'s choose the font. Currently, the paragraph font is (Times) and we want to make it sans-serif to match the rest of our page. Select a font from the menu below.',
+    'Now that our content is formatted, let\'s choose the font.<br></br>Currently, the paragraph font is in <i>Times New Roman</i>, a serif style. We want to make it a sans-serif style to match the rest of our page.<br></br>Select a font from the menu below.',
     '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>',
-    '<select class = \'inputBox\' id=\'inputFieldOne\' name = \'Font List\'> <option value = Arial> Arial</option> <option value = Helvetica> Helvetica</option> <option value= \'Raleway\'>Raleway</option>',
+    '<select class = \'inputBox\' id=\'inputFieldOne\' name = \'Font List\'> <option value = Arial> Arial</option> <option value = Helvetica> Helvetica</option> <option value= \'Georgia\'>Georgia</option>',
     null,
     null);
 
 var layoutPhaseSix = new Phase(
-    'We\'re almost there! The last step is to create a navigation bar from the list that you created on the last page. First, we need to get rid of the bullet points, which is a list style. In the field below, type \'none\' to remove the bullet points.',
+    'We\'re almost there!<br></br>The last step is to create a navigation bar from the list that you created on the last page.<br></br>We first need to get rid of the bullet points, which are a list style. In the field below, type \'<i>none</i>\' to remove the bullet points.',
     '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>',
     '<input type = \'text\' id=\'inputFieldOne\'>',
     null,
     null);
 
 var layoutPhaseSeven = new Phase(
-    'Lastly, we want a horizontal navigation bar. Right now the list is stacked, which is a block dislay. Let\'s change the display to inline.', 
-    '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>', 
+    'Right now the list is stacked, which is a block dislay. However, we want to create a horizontal navigation bar.<br></br>So, let\'s change the display to <i>inline</i>.', 
+    '<input type=\'submit\' value = \'Inline\' id=\'actualButtonOne\'>', 
     null, 
     null, 
     null);
 
 var layoutPhaseEight = new Phase(
-    'Great job! We\'ve formatted our page. Let\'s add some color to make it pop.', 
+    'Great job! We\'ve formatted our page.<br></br>Let\'s add some color to make it pop.', 
     '<input type=\'submit\' value = \'Move on\' id=\'actualButtonOne\'>', 
     null, 
     null, 
