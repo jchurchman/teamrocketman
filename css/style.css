@@ -4,31 +4,127 @@ body {
     flex-direction: column;
 }
 
+
+h3 {
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Karla', sans-serif;
+}
+
+header {
+    background-color: lightblue;
+    height: 200px;
+    /*display: flex;
+    flex-direction: row;
+    align-content: center;*/
+}
 h1 {
     text-align: center;
     font-family: 'Bungee Outline', cursive;
     color:white;
     font-size: 80px;
     padding-top: 30px;
+    
 }
-
-h3 {
+/*.aboutUs img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 80px;
-    font-family: 'Karla', sans-serif;
+}*/
 
-}
-
-header {
-    background-color: black;
-    height: 200px;
-}
-
+/*                      ABOUT US BLURBS */
 #about-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
+.joe {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #226764;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+.meryl {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #226764;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+.kate {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #226764;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+.andrew {
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #226764;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    flex-grow: 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+h5 {
+    text-align: left;
+    padding-top: 50px;
+    font-family: 'Karla', sans-serif;
+    flex-grow: 1;
+    width: 150px;
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+.about-text {
+    text-align: left;
+    margin-top: 0px;
+    font-family: 'Karla', sans-serif;
+    flex-grow: 1;
+    padding-left: 0px;
+    width: 150px;
+}
+
+#startGame {
+    color: black;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
