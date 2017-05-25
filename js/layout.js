@@ -8,7 +8,7 @@ layoutNarrator.getGuest();
 layoutNarrator.popContent();
 
 var layoutPhaseOne = new Phase(
-    'Great! Look how cute that ' + layoutNarrator.guest.marsupial.critterName + ' is. We’ve added the content, so, let’s look at the layout. We\'ll go through the whole process and if you don\'t like the formatting, you can hit the reset button to start over. Now, we\’re going to add borders to all of our HTML elements. This will help you better understand what is known as the Box Model.',
+    'Great! Look how cute that ' + layoutNarrator.guest.marsupial.critterName + ' is.<br></br>We’ve added the content, so, let’s look at the layout. We\'ll go through the whole process and if you don\'t like the formatting, you can hit the reset button to start over. <br></br>Now, we\’re going to add borders to all of our HTML elements. This will help you better understand what is known as the Box Model.',
     '<input type=\'submit\' value = \'Okay\' id=\'actualButtonOne\'>',
     null,
     null,
@@ -68,7 +68,7 @@ layoutNarrator.popPageUser = function () {
 };
 
 var onLoadPage = function () {
-    layoutNarrator.talkLoc.innerText = layoutPhaseOne.talkAt;
+    layoutNarrator.talkLoc.innerHTML = layoutPhaseOne.talkAt;
     layoutNarrator.buttonOne.innerHTML = layoutPhaseOne.buttonOne;
     layoutNarrator.listenLocOne.innerHTML = layoutPhaseOne.inputOne;
     layoutNarrator.listenLocTwo.innerHTML = layoutPhaseOne.inputTwo;
@@ -83,7 +83,7 @@ layoutNarrator.saveGuest = function () {
 onLoadPage();
 
 Phase.prototype.executePhase = function () {
-    layoutNarrator.talkLoc.innerText = this.talkAt;
+    layoutNarrator.talkLoc.innerHTML = this.talkAt;
     layoutNarrator.buttonOne.innerHTML = this.buttonOne;
     if (this.inputOne) {
         layoutNarrator.listenLocOne.innerHTML = this.inputOne;
