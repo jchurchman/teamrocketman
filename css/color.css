@@ -6,3 +6,8 @@
 #buttonOne, #buttonTwo {
     width: 110px;
 }
+
+li {
+    display: inline-block;
+    margin: 5px 20px;
+}
