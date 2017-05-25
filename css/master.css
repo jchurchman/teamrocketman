@@ -30,8 +30,11 @@ footer {
 }
 
 #narrator {
-    background-color: gray;
+    background-color: #226764;
+    color: white;
     position:fixed;
+    border-radius: 5px;
+    padding: 20px 20px;
     margin-left: -100px;
     bottom: 0px;
     right: 0px;
