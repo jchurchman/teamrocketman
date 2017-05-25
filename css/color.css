@@ -1,0 +1,8 @@
+#buttonDiv {
+    display: flex;
+        flex-direction: row;
+}
+
+#buttonOne, #buttonTwo {
+    width: 110px;
+}
