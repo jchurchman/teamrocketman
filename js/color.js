@@ -10,27 +10,26 @@ colorNarrator.popStyles();
 
 var colorPhaseOne = new Phase(
     'Welcome to a world of color! Black and white can be very appealing, but color can also add a lot to a page. Let\'s experiment! First, choose a color for the background of your page.',
-    '<input type="submit" value="Grey">',
+    '<input type="submit" id="actualButtonOne" value="This One!">',
+    '<input type="color" id="inputFieldOne" value="#D3D3D3">',
     null,
-    null,
-    '<input type="submit" value="Light Blue">'
+    null
 );
 
 var colorPhaseTwo = new Phase(
     'Next, choose a color for your header.',
-    '<input type="submit" value="Dark Green">',
+    '<input type="submit" id="actualButtonOne" value="This One!">',
+    '<input type="color" id="inputFieldOne" value="#B03060">',
     null,
-    null,
-    '<input type="submit" value="Maroon">'
-
+    null
 );
 
 var colorPhaseThree = new Phase(
     'Lastly, choose a color for the text in your paragraph.',
-    '<input type="submit" value="Dark Blue">',
+    '<input type="submit" id="actualButtonOne" value="This One!">',
+    '<input type="color" id="inputFieldOne" value="#006400">',
     null,
-    null,
-    '<input type="submit" value="Red">'
+    null
 );
 
 var colorPhaseFour = new Phase(
@@ -38,7 +37,7 @@ var colorPhaseFour = new Phase(
     '<input type="submit" value="Onward!">',
     null,
     null,
-    '<p>You\'re doing so well.</p>'
+    null
 );
 colorNarrator.popPageUser = function () {
     colorUser = this.guest;
@@ -86,27 +85,34 @@ function submitHandler() {
     // if (!event.target.id) {
     //     return;
     // }
+    var selectedColor;
     if (currentPhase === 1 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = document.getElementById('inputFieldOne').value;
         console.log(selectedColor);
         colorUser.color1 = selectedColor;
-        document.getElementsByTagName('body')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('body')[0].style.backgroundColor = selectedColor;
+        colorNarrator.clearThroat();
         colorPhaseTwo.executePhase();
         currentPhase += 1;
     }
     else if (currentPhase === 2 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = document.getElementById('inputFieldOne').value;
         console.log(selectedColor);
         colorUser.color2 = selectedColor;
-        document.getElementsByTagName('h1')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('h1')[0].style.color = selectedColor;
+        colorNarrator.clearThroat();
         colorPhaseThree.executePhase();
         currentPhase += 1;
     }
     else if (currentPhase === 3 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = document.getElementById('inputFieldOne').value;
         console.log(selectedColor);
         colorUser.color3 = selectedColor;
-        document.getElementsByTagName('p')[0].setAttribute('class', selectedColor);
+        var pText = document.getElementsByTagName('p');
+        for (var i = 0; i < pText.length-2; i++) {
+            pText[i].style.color = selectedColor;
+        }
+        colorNarrator.clearThroat();
         colorPhaseFour.executePhase();
         currentPhase += 1;
     }
