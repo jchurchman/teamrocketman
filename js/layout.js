@@ -120,6 +120,7 @@ function submitHandler() {
 
         layoutUser.margin = selectedMargin;
         document.getElementsByTagName('main')[0].style.marginLeft = selectedMargin;
+        document.getElementsByTagName('main')[0].style.marginRight = selectedMargin;
         layoutNarrator.clearThroat();
         layoutPhaseThree.executePhase();
         currentPhase += 1;
