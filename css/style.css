@@ -4,26 +4,31 @@ body {
     flex-direction: column;
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+    font-family: 'Bungee Outline', cursive;
+    color:white;
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Karla', sans-serif;
+
+}
+
+header {
+    background-color: black;
+    height: 200px;
 }
 
 #about-section {
     display: flex;
-    flex: 1;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-footer {
-    border: 5px solid black;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 25px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-}
