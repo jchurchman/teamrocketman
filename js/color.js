@@ -34,7 +34,7 @@ var colorPhaseFour = new Phase(
     '<input type="submit" value="Onward!">',
     null,
     null,
-    ''
+    '<p>You\'re doing so well.</p>'
 );
 
 Phase.prototype.executePhase = function () {
@@ -80,7 +80,7 @@ function submitHandler() {
         var selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color2 = selectedColor;
-        document.getElementsByTagName('body')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('h1')[0].setAttribute('class', selectedColor);
         colorPhaseThree.executePhase();
         currentPhase += 1;
     }
@@ -88,7 +88,7 @@ function submitHandler() {
         var selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color3 = selectedColor;
-        document.getElementsByTagName('body')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('p')[0].setAttribute('class', selectedColor);
         colorPhaseFour.executePhase();
         currentPhase += 1;
     }
@@ -96,7 +96,7 @@ function submitHandler() {
         //save to localstorage and move to next page
         colorNarrator.saveGuest();
         colorNarrator.locallyStoreUser();
-        // window.location.href = './roughdraft.html';
+        window.location.href = './roughdraft.html';
     }
 
 }
