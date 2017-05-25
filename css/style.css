@@ -19,7 +19,7 @@ h3 {
 }
 
 header {
-    background-color: black;
+    background-color: lightblue;
     height: 200px;
 }
 
@@ -30,7 +30,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
@@ -53,37 +53,39 @@ header {
     height: 300px;
     display: flex;
     flex-direction: column;
-    order: 2;
+    order: 1;
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
     margin: 10px;
     color: white;
+    padding: 10px;
 }
 .kate {
     width: 450px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    order: 3;
+    order: 1;
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
     margin: 10px;
     color: white;
+    padding: 10px;
 }
 .andrew {
     width: 450px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    order: 4;
+    order: 1;
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
     margin: 10px;
     color: white;
-    color: white;
+    padding: 10px;
 }
 
 img {
