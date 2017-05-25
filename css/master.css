@@ -12,6 +12,7 @@ body {
 
 * {
     box-sizing: inherit;
+    font-family: sans-serif;
 }
 
 footer {
@@ -43,4 +44,8 @@ footer {
     min-height: 300px;
     z-index: 10;
     height: auto;
+}
+
+img {
+    max-width: 60%;
 }
