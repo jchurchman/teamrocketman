@@ -2,12 +2,22 @@
 
 var roughDraftNarrator = new Narrator ();
 var roughDraftUser = new User();
+// var currentPhase = 1;
+
+roughDraftNarrator.getGuest();
+roughDraftNarrator.popContent();
+roughDraftNarrator.popStyles();
+roughDraftNarrator.popColors();
 
 roughDraftNarrator.saveGuest = function() {
     this.guest = roughDraftUser;
 };
 
-var submitButton = document.getElementById('submit');
+roughDraftNarrator.popPageUser = function () {
+    roughDraftUser = this.guest;
+};
+
+var submitButton = document.getElementById('buttonDiv');
 submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
