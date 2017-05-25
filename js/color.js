@@ -108,7 +108,10 @@ function submitHandler() {
         selectedColor = document.getElementById('inputFieldOne').value;
         console.log(selectedColor);
         colorUser.color3 = selectedColor;
-        document.getElementsByTagName('p')[0].style.color = selectedColor;
+        var pText = document.getElementsByTagName('p');
+        for (var i = 0; i < pText.length-2; i++) {
+            pText[i].style.color = selectedColor;
+        }
         colorNarrator.clearThroat();
         colorPhaseFour.executePhase();
         currentPhase += 1;
