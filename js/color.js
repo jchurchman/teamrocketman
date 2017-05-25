@@ -86,27 +86,28 @@ function submitHandler() {
     // if (!event.target.id) {
     //     return;
     // }
+    var selectedColor;
     if (currentPhase === 1 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color1 = selectedColor;
-        document.getElementsByTagName('body')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('body')[0].style.backgroundColor = selectedColor;
         colorPhaseTwo.executePhase();
         currentPhase += 1;
     }
     else if (currentPhase === 2 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color2 = selectedColor;
-        document.getElementsByTagName('h1')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('h1')[0].style.color = selectedColor;
         colorPhaseThree.executePhase();
         currentPhase += 1;
     }
     else if (currentPhase === 3 && event.target.value) {
-        var selectedColor = event.target.value;
+        selectedColor = event.target.value;
         console.log(selectedColor);
         colorUser.color3 = selectedColor;
-        document.getElementsByTagName('p')[0].setAttribute('class', selectedColor);
+        document.getElementsByTagName('p')[0].style.color = selectedColor;
         colorPhaseFour.executePhase();
         currentPhase += 1;
     }
