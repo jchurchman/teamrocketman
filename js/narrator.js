@@ -88,14 +88,22 @@ function Narrator() {
         this.popMargin();
         this.popFont();
     };
-/* rewrite these functions given new organization*/
 
-    this.talkAtUser = function (speech) {
-        this.talkLoc.innerText = speech;
-    };
+    this.clearThroat = function () {
+        this.buttonOne.removeChild(document.getElementById('actualButtonOne'));
+        if (document.getElementById('inputFieldOne')) {
+        this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
+        }
+        if (document.getElementById('inputFieldTwo')) {
+        this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
+        }
+        if (document.getElementById('actualButtonTwo')) {
+        this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
+        }
 
-    this.hearUser = function () {
-        this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
+        // this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
+        // this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
+        // this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
 
