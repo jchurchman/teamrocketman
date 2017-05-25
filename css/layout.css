@@ -7,3 +7,11 @@ h1, h2, h3, ul, li, #mainParagraph {
     color: black;
 }
 
+#buttonDiv {
+    display: flex;
+        flex-direction: row;
+}
+
+#buttonOne, #buttonTwo {
+    width: 110px;
+}
