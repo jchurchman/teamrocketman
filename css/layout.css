@@ -1,5 +1,17 @@
-#mainParagraph {
-    font-family: 'Times New Roman', Times, serif;
-    color: blue;
+h1, h2, h3, ul, li, #mainParagraph {
+    border: inherit;
 }
 
+#mainParagraph {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#buttonDiv {
+    display: flex;
+        flex-direction: row;
+}
+
+#buttonOne, #buttonTwo {
+    width: 110px;
+}
