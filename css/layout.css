@@ -1,5 +1,9 @@
-h1, h2, h3, ul, li, #mainParagraph {
+h1, h2, ul, li {
     border: inherit;
+}
+
+div, h3, p, img {
+    border:inherit;
 }
 
 #mainParagraph {
@@ -7,11 +11,17 @@ h1, h2, h3, ul, li, #mainParagraph {
     color: black;
 }
 
+/*  line submit buttons up side-by-side  */
 #buttonDiv {
     display: flex;
         flex-direction: row;
 }
 
+/*  formatting button size  */
 #buttonOne, #buttonTwo {
     width: 110px;
+}
+
+#buttonTwo {
+    margin-right: 5px;
 }
