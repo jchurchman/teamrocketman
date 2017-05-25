@@ -86,33 +86,39 @@ function submitHandler() {
     //     return;
     // }
     var selectedColor;
-    while (currentPhase < 4 && event.target.value) {
+    if (currentPhase === 1 && event.target.value) {
         selectedColor = document.getElementById('inputFieldOne').value;
         console.log(selectedColor);
-        if (currentPhase === 1) {
-            colorUser.color1 = selectedColor;
-            document.getElementsByTagName('body')[0].style.backgroundColor = selectedColor;
-            currentPhase += 1;
-        }
-        else if (currentPhase === 2) {
-            colorUser.color2 = selectedColor;
-            document.getElementsByTagName('h1')[0].style.color = selectedColor;
-            currentPhase += 1;
-        }
-        else if (currentPhase === 3) {
-            colorUser.color3 = selectedColor;
-            document.getElementsByTagName('p')[0].style.color = selectedColor;
-            currentPhase += 1;
-        }
+        colorUser.color1 = selectedColor;
+        document.getElementsByTagName('body')[0].style.backgroundColor = selectedColor;
         colorNarrator.clearThroat();
         colorPhaseTwo.executePhase();
+        currentPhase += 1;
     }
-    // else if (currentPhase === 4 ) {
-    //     //save to localstorage and move to next page
-    //     colorNarrator.saveGuest();
-    //     colorNarrator.locallyStoreUser();
-    //     window.location.href = './roughdraft.html';
-    // }
+    else if (currentPhase === 2 && event.target.value) {
+        selectedColor = document.getElementById('inputFieldOne').value;
+        console.log(selectedColor);
+        colorUser.color2 = selectedColor;
+        document.getElementsByTagName('h1')[0].style.color = selectedColor;
+        colorNarrator.clearThroat();
+        colorPhaseThree.executePhase();
+        currentPhase += 1;
+    }
+    else if (currentPhase === 3 && event.target.value) {
+        selectedColor = document.getElementById('inputFieldOne').value;
+        console.log(selectedColor);
+        colorUser.color3 = selectedColor;
+        document.getElementsByTagName('p')[0].style.color = selectedColor;
+        colorNarrator.clearThroat();
+        colorPhaseFour.executePhase();
+        currentPhase += 1;
+    }
+    else if (currentPhase === 4 && event.target.value) {
+        //save to localstorage and move to next page
+        colorNarrator.saveGuest();
+        colorNarrator.locallyStoreUser();
+        window.location.href = './roughdraft.html';
+    }
 }
 
 
