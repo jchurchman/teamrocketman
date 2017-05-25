@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+footer {
+    /*border: 2px solid black;*/
+    background: black;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 5;
+}
+
+#narrator {
+    background-color: gray;
+    position:fixed;
+    margin-left: -100px;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    min-height: 300px;
+    z-index: 10;
+    height: auto;
+}
