@@ -142,8 +142,10 @@ function submitHandler() {
     } else if (currentPhase === 5) {
         var selectedFont = document.querySelector('#inputFieldOne option:checked').value;
         layoutUser.pFont = selectedFont;
-        var pfontLoc = document.getElementById('mainParagraph');
-        pfontLoc.style.fontFamily = selectedFont;
+        var pfontLoc = document.getElementsByTagName('p');
+        for (var i = 0; i < pfontLoc.length - 2; i++) {
+            pfontLoc[i].style.fontFamily = selectedFont;
+        }
         layoutNarrator.popCritterPic();
         layoutNarrator.clearThroat();
         layoutPhaseSix.executePhase();
