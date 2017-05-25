@@ -88,14 +88,12 @@ function Narrator() {
         this.popMargin();
         this.popFont();
     };
-/* rewrite these functions given new organization*/
 
-    this.talkAtUser = function (speech) {
-        this.talkLoc.innerText = speech;
-    };
-
-    this.hearUser = function () {
-        this.listenLoc.innerHTML = '<input class="inputBox" id="input" type="text"/>';
+    this.clearThroat = function () {
+        this.buttonOne.removeChild(document.getElementById('actualButtonOne'));
+        this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
+        this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
+        this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
 
