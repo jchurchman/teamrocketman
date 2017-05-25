@@ -1,5 +1,9 @@
+h1, h2, h3, ul, li, #mainParagraph {
+    border: inherit;
+}
+
 #mainParagraph {
     font-family: 'Times New Roman', Times, serif;
-    color: blue;
+    color: black;
 }
 

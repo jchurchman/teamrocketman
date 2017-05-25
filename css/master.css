@@ -32,7 +32,7 @@ footer {
 
 #narrator {
     background-color: #226764;
-    color: white;
+    color: black;
     position:fixed;
     border-radius: 5px;
     padding: 20px 20px;
@@ -43,4 +43,8 @@ footer {
     min-height: 300px;
     z-index: 10;
     height: auto;
+}
+
+#talkLoc {
+    color: white;
 }
