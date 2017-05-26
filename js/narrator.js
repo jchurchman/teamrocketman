@@ -113,9 +113,6 @@ function Narrator() {
         this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
         }
 
-        // this.listenLocOne.removeChild(document.getElementById('inputFieldOne'));
-        // this.listenLocTwo.removeChild(document.getElementById('inputFieldTwo'));
-        // this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
 

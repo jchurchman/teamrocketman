@@ -36,7 +36,7 @@ var layoutPhaseFour = new Phase(
     '<input type=\'submit\' value = \'right\' id=\'actualButtonTwo\'>');
 
 var layoutPhaseFive = new Phase(
-    'Now that our content is formatted, let\'s choose the font.<br></br>Currently, the paragraph font is in <i>Times New Roman</i>, a serif style. We want to make it a sans-serif style to match the rest of our page.<br></br>Select a font from the menu below.',
+    'Now that our content is formatted, let\'s choose the font.<br></br>Currently, the paragraph font is in <i>Comic Sans</i>.. the absolute worst of the fonts. We want to make it look a little more professional.</br><br/>Select a font from the menu below.',
     '<input type=\'submit\' value = \'Submit\' id=\'actualButtonOne\'>',
     '<select class = \'inputBox\' id=\'inputFieldOne\' name = \'Font List\'> <option value = Arial> Arial</option> <option value = Helvetica> Helvetica</option> <option value= \'Georgia\'>Georgia</option>',
     null,
