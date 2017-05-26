@@ -8,7 +8,6 @@ h3 {
     text-align: center;
     padding-top: 80px;
     font-family: 'Rubik', sans-serif;
-    /*font-weight: bold;*/
     color:darkgray;
     letter-spacing: 2px;
     margin-bottom: 50px;
@@ -17,7 +16,7 @@ h3 {
 header {
     background-color: #226764;
     height: 200px;
-    border-bottom: 16px solid #63DC90;
+    border-bottom: 20px solid #63DC90;
 
 }
 h1 {
@@ -57,7 +56,6 @@ hr {
     justify-content: space-around;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 100px;
     box-sizing: border-box;
     align-content: center;
 }
@@ -164,19 +162,18 @@ h5 {
 }
 
 
-footer {
-    font: Arial;
-    background: black;
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    max-height: 100%;
-    z-index: 5;
+/*     ABOUT THE GAME, LETS BEGIN SECTION     */
+#startGame{
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+#startGame p {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color:darkgray;
+    margin-bottom: 50px;
+    width: fit-content;
 }
 
 
@@ -185,14 +182,9 @@ footer {
 }
 #rocketShip:hover{
     width: 80px;
-    animation: rocketship 3s ease-in infinite;
-    transform:rotate(360deg);
+    animation: rocketship 3s ease-in-out infinite;
+    transform:rotate(1080deg);
 }
-
-    /*animation: rocketship 3s ease-in infinite;
-    transform:rotate(360deg);*/
-
-
 
 button {
     width: fit-content;
@@ -204,7 +196,7 @@ button:hover {
 }
 @keyframes rocketship {
     0% {transform: rotate(0);}
-    100% {transform: rotate3d(360deg);}
+    100% {transform: rotate3d(1080deg);}
 }
 
 a {
@@ -224,4 +216,20 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+footer {
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 5;
 }
