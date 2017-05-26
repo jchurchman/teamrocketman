@@ -9,9 +9,25 @@ welcomeNarrator.saveGuest = function() {
 
 welcomeUser.userSubmission = function() {
     this.userName = document.getElementById('userNameInput').value;
+    if (this.userName == '') {
+        alert('Enter your name.');
+        return false;
+    }
     this.color = document.getElementById('colorInput').value;
+    if (this.color == '') {
+        alert('Enter your favorite color.');
+        return false;
+    }
     this.mood = document.getElementById('moodInput').value;
+    if (this.mood == '') {
+        alert('Enter your mood. Or just random letters, at least.');
+        return false;
+    }
     this.particle = document.getElementById('particleInput').value;
+    if (this.particle == '') {
+        alert('Can\'t think of a favorite subatomic particle? Just put in something.');
+        return false;
+    }
     // this.marsupial = document.querySelector('#dropdown option:checked').value;
     switch (document.querySelector('#dropdown option:checked').value) {
     case 'kangaroo':
@@ -27,6 +43,7 @@ welcomeUser.userSubmission = function() {
         this.marsupial = new Marsupial ('Tasmanian Devil', 'tasmaniandevil', './img/tasmaniandevil.jpg', 'The size of a small dog, it became the largest carnivorous marsupial in the world following the extinction of the thylacine in 1936. It is characterized by its stocky and muscular build, black fur, pungent odor, extremely loud and disturbing screech, keen sense of smell, and ferocity when feeding. The Tasmanian devil\'s large head and neck allow it to generate among the strongest bites per unit body mass of any extant mammal land predator, and it hunts prey and scavenges carrion as well as eating household products if humans are living nearby.');
         break;
     }
+    return true;
 };
 
 var submitButton = document.getElementById('buttonOne');
@@ -34,7 +51,9 @@ submitButton.addEventListener('click', submitHandler);
 
 function submitHandler() {
     event.preventDefault();
-    welcomeUser.userSubmission();
+    var validation = welcomeUser.userSubmission();
+    console.log(validation);
+    if (!validation) return;
     welcomeNarrator.saveGuest();
     welcomeNarrator.locallyStoreUser();
     window.location.href= './layout.html';
