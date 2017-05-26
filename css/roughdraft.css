@@ -1,8 +1,14 @@
 #buttonDiv {
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
 }
 
 #buttonOne, #buttonTwo {
     width: 110px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 5px 20px;
 }
