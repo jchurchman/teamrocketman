@@ -31,13 +31,15 @@ h1 {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
+    box-sizing: border-box;
 }
 
 .joe {
+    box-sizing: border-box;
     width: 450px;
     height: 300px;
     display: flex;
@@ -46,15 +48,19 @@ h1 {
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
-    margin: 10px;
+    margin: 20px;
     color: white;
     padding: 10px;
+    align-self: auto;
 }
+
 .joe:hover {
     background-color: #59B3B0;
 }
+
 .meryl {
     width: 450px;
+    box-sizing: border-box;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -62,42 +68,48 @@ h1 {
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
-    margin: 10px;
+    margin: 20px;
     color: white;
     padding: 10px;
 }
+
 .meryl:hover {
     background-color: #59B3B0;
 }
+
 .kate {
     width: 450px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    order: 1;
+    order: 2;
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
-    margin: 10px;
+    margin: 20px;
     color: white;
     padding: 10px;
 }
+
 .kate:hover {
     background-color: #59B3B0;
 }
+
 .andrew {
+    box-sizing: border-box;
     width: 450px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    order: 1;
+    order: 2;
     flex-wrap: wrap;
     border-radius: 5px;
     background-color: #226764;
-    margin: 10px;
+    margin: 20px;
     color: white;
     padding: 10px;
 }
+
 .andrew:hover {
     background-color: #59B3B0;
 }
@@ -159,11 +171,11 @@ hr {
 
 button {
     width: fit-content;
-    background-color: #59B3B0;
+    background-color: #226764;
     
 }
 button:hover {
-    background-color: grey;
+    background-color: #59B3B0;
 }
 
 a {
