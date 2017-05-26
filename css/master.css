@@ -47,9 +47,13 @@ footer {
     clear: both;
 }
 
-
 #talkLoc {
     color: white;
+}
+
+main {
+    height: fit-content;
+    padding-bottom: 50px;
 }
 
 img {
@@ -64,7 +68,3 @@ img {
     margin-bottom: 50px;
 }
 
-main {
-    height: fit-content;
-    padding-bottom: 50px;
-}
