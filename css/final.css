@@ -30,3 +30,8 @@ a {
 a:hover {
     color:white;
 }
+
+li {
+    display: inline-block;
+    margin: 5px 20px;
+}
