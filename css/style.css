@@ -7,23 +7,46 @@ body {
 h3 {
     text-align: center;
     padding-top: 80px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    /*font-weight: bold;*/
+    color:darkgray;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }
 
 header {
-    background-color: lightblue;
+    background-color: #226764;
     height: 200px;
+    border-bottom: 16px solid #63DC90;
 
 }
 h1 {
     text-align: center;
     font-family: 'Bungee Outline', cursive;
     color:white;
-    font-size: 80px;
+    font-size: 90px;
     padding-top: 30px;
+    letter-spacing: 2px;
     
 }
+h1:hover {
+    animation: change 6s ease-in-out 0s infinite alternate;
+}
+@keyframes change {
+    0% {color:white;left:20%;top: 50%;font-size:90px}
+    20% {color:#63DC90}
+    40% {color:#1EAEDB}
+    60% {color:goldenrod}
+    75% {color:#1EAEDB}
+    85% {color:#63DC90}
+    100% {color:white;left:50%;top: 60%;font-size:110px}
+}
 
+hr {
+    width: 40%;
+    margin-top: 0;
+    border-top: 2px solid lightblue;
+}
 
 /*                      ABOUT US BLURBS */
 #about-section {
@@ -36,6 +59,7 @@ h1 {
     margin: 0 auto;
     margin-bottom: 100px;
     box-sizing: border-box;
+    align-content: center;
 }
 
 .joe {
@@ -123,16 +147,17 @@ img {
 h5 {
     text-align: left;
     padding-top: 50px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
     flex-grow: 1;
     width: 150px;
     margin-bottom: 0px;
     line-height: 25px;
+    height: fit-content;
 }
 .about-text {
     text-align: left;
     margin-top: 0px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Rubik', sans-serif;
     flex-grow: 1;
     padding-left: 0px;
     width: 150px;
@@ -140,7 +165,6 @@ h5 {
 
 
 footer {
-    /*border: 2px solid black;*/
     font: Arial;
     background: black;
     color: white;
@@ -155,19 +179,20 @@ footer {
     z-index: 5;
 }
 
-hr {
-    width: 40%;
-    margin-top: 0;
-    color:white;
-}
 
 #rocketShip{
     width: 80px;
-
 }
-#rocketShip:hover {
-
+#rocketShip:hover{
+    width: 80px;
+    animation: rocketship 3s ease-in infinite;
+    transform:rotate(360deg);
 }
+
+    /*animation: rocketship 3s ease-in infinite;
+    transform:rotate(360deg);*/
+
+
 
 button {
     width: fit-content;
@@ -176,6 +201,10 @@ button {
 }
 button:hover {
     background-color: #59B3B0;
+}
+@keyframes rocketship {
+    0% {transform: rotate(0);}
+    100% {transform: rotate3d(360deg);}
 }
 
 a {
