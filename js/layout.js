@@ -24,7 +24,7 @@ var layoutPhaseTwo = new Phase(
 var layoutPhaseThree = new Phase(
     'Doesn’t that look better?  We’ve indented the content on our page, utilizing white space.<br></br>We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size.<br></br>Right now our font is set to 24px.  Try typing in 72 for the pixel value of the header.',
     '<input type=\'submit\' value = \'submit\' id=\'actualButtonOne\'>',
-    '<input id=\'inputFieldOne\' type=\'text\'>',
+    '<input id=\'inputFieldOne\' type=\'number\'>',
     null,
     null);
 
