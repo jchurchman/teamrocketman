@@ -16,7 +16,6 @@ body {
 }
 
 footer {
-    /*border: 2px solid black;*/
     font: Arial;
     background: black;
     color: white;
@@ -29,6 +28,7 @@ footer {
     width: 100%;
     max-height: 100%;
     z-index: 5;
+    clear: both;
 }
 
 #narrator {
@@ -44,6 +44,7 @@ footer {
     min-height: 300px;
     z-index: 10;
     height: auto;
+    clear: both;
 }
 
 
@@ -53,4 +54,17 @@ footer {
 
 img {
     max-width: 60%;
+    margin-right: 10px;
+    clear:both;
+}
+
+#empty {
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main {
+    height: fit-content;
+    padding-bottom: 50px;
 }
