@@ -24,7 +24,7 @@ var layoutPhaseTwo = new Phase(
 var layoutPhaseThree = new Phase(
     'Doesn’t that look better?  We’ve indented the content on our page, utilizing white space.<br></br>We want our header to really stand out. Let\'s make it a little bigger by increasing the pixel size.<br></br>Right now our font is set to 24px.  Try typing in 72 for the pixel value of the header.',
     '<input type=\'submit\' value = \'submit\' id=\'actualButtonOne\'>',
-    '<input id=\'inputFieldOne\' type=\'text\'>',
+    '<input id=\'inputFieldOne\' type=\'number\'>',
     null,
     null);
 
@@ -123,12 +123,14 @@ function submitHandler() {
             currentPhase += 1;
         } else if (currentPhase === 3) {
             var headerInput = document.getElementById('inputFieldOne').value;
-            layoutUser.fontSize = headerInput;
             var headerLoc = document.getElementsByTagName('h1')[0];
-            headerLoc.style.fontSize = headerInput + 'px';
-            layoutNarrator.clearThroat();
-            layoutPhaseFour.executePhase();
-            currentPhase += 1;
+            if (headerInput) {
+                layoutUser.fontSize = headerInput;
+                headerLoc.style.fontSize = headerInput + 'px';
+                layoutNarrator.clearThroat();
+                layoutPhaseFour.executePhase();
+                currentPhase += 1;
+            }
         } else if (currentPhase === 4) {
             var selectedFloat = event.target.value;
             layoutUser.float = selectedFloat;
@@ -151,12 +153,15 @@ function submitHandler() {
         } else if (currentPhase === 6) {
             var listStyleInput = document.getElementById('inputFieldOne').value;
             var listLoc = document.getElementsByTagName('ul')[0];
-            /*          $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$        */
-            /*REDO ALL TAG STYLE CHANGES AS FOLLOWS*/
-            listLoc.style.listStyleType = listStyleInput;
-            layoutNarrator.clearThroat();
-            layoutPhaseSeven.executePhase();
-            currentPhase += 1;
+            if (listStyleInput == 'none' || listStyleInput == 'square') {
+                listLoc.style.listStyleType = listStyleInput;
+                layoutNarrator.clearThroat();
+                layoutPhaseSeven.executePhase();
+                currentPhase += 1;
+            } else {
+                alert('Please enter in \'none\'! Or \'square,\' if you\'re going to be like that.');
+                return;
+            }
         } else if (currentPhase === 7) {
             var navBarLI = document.getElementsByTagName('li');
             for (var i = 0; i < navBarLI.length; i++) {
