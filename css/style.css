@@ -135,6 +135,29 @@ hr {
 .andrew:hover {
     background-color: #59B3B0;
 }
+.newUser {
+    box-sizing: border-box;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    order: 3;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: #226764;
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    align-self: auto;
+}
+
+.newUser:hover {
+    background-color: #59B3B0;
+}
+
+#questionMark {
+    width: 400px;
+}
 
 img {
     flex-grow: 2;
@@ -217,7 +240,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
 }
-
 
 footer {
     font-family: Arial, sans-serif;
