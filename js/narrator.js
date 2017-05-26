@@ -118,3 +118,16 @@ function Narrator() {
         // this.buttonTwo.removeChild(document.getElementById('actualButtonTwo'));
     };
 }
+
+window.addEventListener('keypress', checkKeyPressed, false);
+function checkKeyPressed(e){
+    if (e.charCode === 47 && document.getElementById('narrator').className === 'hidden') {
+        console.log('Look at me!');
+        document.getElementById('narrator').style.right = '0px';
+        document.getElementById('narrator').className = 'visible';
+    } else if (e.charCode === 47 && document.getElementById('narrator').className === 'visible') {
+        console.log('!Look at me');
+        document.getElementById('narrator').style.right = '-380px';
+        document.getElementById('narrator').className = 'hidden';
+    }
+}
