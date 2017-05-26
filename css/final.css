@@ -1,3 +1,4 @@
+
 * {
     -webkit-transition: all 10s ease-in-out 1s;
     transition: all 20s ease-out 2s;
@@ -8,4 +9,37 @@ audio {
     position: fixed;
     top: 90%;
     left: 25%;
+}
+
+#buttonDiv {
+    display: flex;
+        flex-direction: row;
+}
+
+#buttonOne, #buttonTwo {
+    width: 110px;
+}
+  audio {
+    position: fixed;
+    top: 90%;
+    left: 25%;
+
+}
+
+button {
+    width: fit-content;
+    background-color: #226764;
+    
+}
+button:hover {
+    background-color: #59B3B0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:white;
 }
