@@ -6,8 +6,8 @@ div, h3, p, img {
     border:inherit;
 }
 
-#mainParagraph {
-    font-family: 'Times New Roman', Times, serif;
+.mainParagraph p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
     color: black;
 }
 
