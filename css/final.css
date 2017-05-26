@@ -1,4 +1,10 @@
+* {
+    -webkit-transition: all 10s ease-in-out 1s;
+    transition: all 20s ease-out 2s;
+}
+
 audio {
+    transition: all 0s linear 0s;
     position: fixed;
     top: 90%;
     left: 25%;
