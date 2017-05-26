@@ -1,7 +1,9 @@
 
 * {
-    -webkit-transition: all 10s ease-in-out 1s;
-    transition: all 20s ease-out 2s;
+    -webkit-transition: all 29s ease-in-out 1s;
+    transition: all 29s ease-out 2s;
+    /*-webkit-transition: all 57s ease-in-out 1s;
+    transition: all 57s ease-out 2s;*/
 }
 
 audio {
