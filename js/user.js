@@ -32,20 +32,4 @@ function Phase(talkAt, buttonOne, inputOne, inputTwo, buttonTwo) {
     this.inputOne = inputOne;
     this.inputTwo = inputTwo;
     this.buttonTwo = buttonTwo;
-    // this.executePhase = function(){
-//         Narrator.talkLoc.innerText = this.talkAt;
-//         Narrator.buttonOne.innerHTML = this.buttonOne;
-
-// if (this.inputOne) {
-//     Narrator.listenLocOne.innerHTML = this.inputOne;
-// }
-
-// if (this.inputTwo) {
-//     Narrator.listenLocTwo.innerHTML = this.inputTwo;
-// }
-
-// if (this.buttonTwo) {
-//     Narrator.buttonTwo.innerHTML = this.buttonTwo;
-// }
-//     };
 }
